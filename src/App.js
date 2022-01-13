@@ -1,9 +1,10 @@
-import styles from "./App.modules.css";
+import styles from './App.module.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className={styles.app}>
-      <h1>Linkedin redesign</h1>
+      <Header />
     </div>
   );
 }

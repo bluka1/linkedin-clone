@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  flex: 0.4;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLeft > img {
+  width: 46px;
+}
+
+.headerLeft-options {
+  display: flex;
+}
+
+.headerRight {
+  display: flex;
+  flex: 0.6;
+  justify-content: space-between;
+  align-items: center;
+}
