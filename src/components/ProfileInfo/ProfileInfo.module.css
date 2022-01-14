@@ -21,7 +21,8 @@
 
 .profileDescription {
 	text-transform: uppercase;
-	color: lightgray;
+	color: var(--text-color);
+	opacity: 0.2;
 	font-size: 12px;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .profileViews {
-	color: gray;
+	color: var(--views-color);
 	font-size: 12px;
 	font-weight: 400;
 	font-family: 'Gotham Pro', sans-serif;
@@ -39,7 +40,7 @@
 }
 
 .profileGrowth {
-	color: #02b033;
+	color: var(--growth-color);
 	font-size: 12px;
 	display: flex;
 	align-items: center;

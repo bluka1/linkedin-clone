@@ -1,6 +1,6 @@
 import { Avatar } from '@material-ui/core';
-import arrow from '../../img/arrow.svg';
 
+import arrowIcon from '../../img/arrow.svg';
 import styles from './ProfileInfo.module.css';
 
 function ProfileInfo() {
@@ -15,7 +15,7 @@ function ProfileInfo() {
 				<div className={styles.profileViewsAndGrowth}>
 					<span className={styles.profileViews}>367 views today </span>
 					<span className={styles.profileGrowth}>
-						&ensp;+32 <img src={arrow} alt="" />
+						&ensp;+32 <img src={arrowIcon} alt="arrow" />
 					</span>
 				</div>
 			</div>

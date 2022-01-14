@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid whitesmoke;
+	border-bottom: 1px solid var(--border-color);
 }
 
 .headerLeft {
@@ -16,7 +16,7 @@
 .headerLeft > img {
 	width: 46px;
 	padding: 18px 42px 18px 22px;
-	border-right: 1px solid whitesmoke;
+	border-right: 1px solid var(--border-color);
 }
 
 .headerLeft-options {
@@ -25,7 +25,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 18px 20px;
-	border-right: 1px solid whitesmoke;
+	border-right: 1px solid var(--border-color);
 }
 
 .headerRight {
@@ -54,19 +54,19 @@
 }
 
 .search > input::placeholder {
-	color: lightgray;
+	color: var(--placeholder-color);
 	font-size: 16px;
 	font-weight: 100;
 }
 
 .headerRight-profile {
 	flex: 1;
-	border-left: 1px solid whitesmoke;
+	border-left: 1px solid var(--border-color);
 }
 
 .otherItem {
 	padding: 18px 0;
-	border-left: 1px solid whitesmoke;
-	border-right: 1px solid whitesmoke;
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
 	margin-right: 40px;
 }

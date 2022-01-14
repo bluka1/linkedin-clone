@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
+:root {
+	--border-color: #f4f4f4;
+	--growth-color: #02b033;
+	--placeholder-color: #cecece;
+	--views-color: #747474;
+	--description-color: #181818;
+}
+
 body {
 	margin: 0;
 	font-family: 'Gothic A1', sans-serif;
