@@ -1,8 +1,7 @@
 .profile {
 	display: flex;
 	align-items: center;
-	flex: 1;
-	padding: 0 30px;
+	padding: 18px 30px;
 }
 
 .profileInformation {
@@ -16,7 +15,8 @@
 .profileName {
 	text-transform: uppercase;
 	font-size: 12px;
-	line-height: 21px;
+	font-weight: 900;
+	line-height: 20px;
 }
 
 .profileDescription {
@@ -27,12 +27,13 @@
 
 .profileViewsAndGrowth {
 	display: flex;
-	line-height: 22px;
+	line-height: 20px;
 }
 
 .profileViews {
 	color: gray;
 	font-size: 12px;
+	font-weight: 400;
 	font-family: 'Gotham Pro', sans-serif;
 	font-style: normal;
 }

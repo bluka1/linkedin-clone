@@ -31,7 +31,7 @@
 .headerRight {
 	display: flex;
 	flex: 0.55;
-	margin: 0 20px;
+	margin: 0px 20px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -41,7 +41,6 @@
 	align-items: center;
 	flex: 1;
 	padding: 18px 0;
-	border-right: 1px solid whitesmoke;
 }
 
 .search > img {
@@ -54,12 +53,20 @@
 	background: transparent;
 }
 
+.search > input::placeholder {
+	color: lightgray;
+	font-size: 16px;
+	font-weight: 100;
+}
+
 .headerRight-profile {
 	flex: 1;
+	border-left: 1px solid whitesmoke;
 }
 
 .otherItem {
+	padding: 18px 0;
 	border-left: 1px solid whitesmoke;
 	border-right: 1px solid whitesmoke;
-	margin-right: 20px;
+	margin-right: 40px;
 }

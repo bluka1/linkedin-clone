@@ -29,7 +29,9 @@ function Header() {
 					<img src={search} alt="" />
 					<input type="text" placeholder="Search" />
 				</div>
-				<ProfileInfo className={styles['headerRight-profile']} />
+				<div className={styles['headerRight-profile']}>
+					<ProfileInfo />
+				</div>
 				<div className={styles.otherItem}>
 					<MenuItem source={more} text="other" />
 				</div>
