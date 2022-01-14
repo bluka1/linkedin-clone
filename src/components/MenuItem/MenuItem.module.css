@@ -1,12 +1,12 @@
 .menuItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
 }
 
 .text {
-  text-transform: uppercase;
-  color: black;
+	text-transform: uppercase;
+	color: black;
 }
