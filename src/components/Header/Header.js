@@ -25,10 +25,12 @@ function Header() {
 				</div>
 			</div>
 			<div className={styles.headerRight}>
-				<img src={search} alt="" />
-				<input />
-				<ProfileInfo />
-				<MenuItem source={more} text="other" />
+				<div className={styles.search}>
+					<img src={search} alt="" />
+					<input type="text" placeholder="Search" />
+				</div>
+				<ProfileInfo className={styles['headerRight-profile']} />
+				<MenuItem className={styles.other} source={more} text="other" />
 			</div>
 		</div>
 	);
