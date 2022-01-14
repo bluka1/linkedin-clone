@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
 :root {
-	--border-color: #f4f4f4;
-	--growth-color: #02b033;
-	--placeholder-color: #cecece;
-	--views-color: #747474;
-	--description-color: #181818;
+	--grey-primary: #f4f4f4;
+	--grey-secondary: #747474;
+	--grey-tertiary: #cecece;
+	--green-primary: #02b033;
+	--black-primary: #181818;
 }
 
 body {

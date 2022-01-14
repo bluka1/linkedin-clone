@@ -3,13 +3,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: var(--text-color);
+	color: var(--black-primary);
 	margin: 0 20px;
 }
 
 .text {
 	text-transform: uppercase;
-	color: var(--text-color);
+	color: var(--black-primary);
 	margin: 5px 0;
 	font-size: 12px;
 }

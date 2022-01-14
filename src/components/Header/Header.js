@@ -1,3 +1,6 @@
+import MenuItem from '../MenuItem/MenuItem';
+import ProfileInfo from '../ProfileInfo/ProfileInfo';
+
 import rssIcon from '../../img/rss.svg';
 import usersIcon from '../../img/users.svg';
 import briefcaseIcon from '../../img/briefcase.svg';
@@ -6,8 +9,6 @@ import bellIcon from '../../img/bell.svg';
 import searchIcon from '../../img/search.svg';
 import moreIcon from '../../img/more.svg';
 import logoIcon from '../../img/blue-logo.svg';
-import MenuItem from '../MenuItem/MenuItem';
-import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import styles from './Header.module.css';
 
 function Header() {
