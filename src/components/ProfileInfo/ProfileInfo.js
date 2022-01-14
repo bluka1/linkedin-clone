@@ -5,17 +5,17 @@ import styles from './ProfileInfo.module.css';
 
 function ProfileInfo() {
 	return (
-		<div className={styles.profileInfo}>
+		<div className={styles.profile}>
 			<Avatar />
-			<div>
+			<div className={styles.profileInformation}>
 				<div>
-					<span>Luka Batarelo</span>
-					<span>you</span>
+					<span className={styles.profileName}>Luka Batarelo</span>
+					<span className={styles.profileDescription}>&emsp;you</span>
 				</div>
-				<div>
-					<span>367 views today</span>
-					<span>
-						+32 <img src={arrow} alt="" />
+				<div className={styles.profileViewsAndGrowth}>
+					<span className={styles.profileViews}>367 views today </span>
+					<span className={styles.profileGrowth}>
+						&ensp;+32 <img src={arrow} alt="" />
 					</span>
 				</div>
 			</div>

@@ -30,7 +30,9 @@ function Header() {
 					<input type="text" placeholder="Search" />
 				</div>
 				<ProfileInfo className={styles['headerRight-profile']} />
-				<MenuItem className={styles.other} source={more} text="other" />
+				<div className={styles.otherItem}>
+					<MenuItem source={more} text="other" />
+				</div>
 			</div>
 		</div>
 	);

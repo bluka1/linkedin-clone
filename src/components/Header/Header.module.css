@@ -7,7 +7,7 @@
 
 .headerLeft {
 	display: flex;
-	flex: 0.4;
+	flex: 0.45;
 	margin: 0 20px;
 	justify-content: space-between;
 	align-items: center;
@@ -30,7 +30,7 @@
 
 .headerRight {
 	display: flex;
-	flex: 0.6;
+	flex: 0.55;
 	margin: 0 20px;
 	justify-content: space-between;
 	align-items: center;
@@ -39,7 +39,7 @@
 .search {
 	display: flex;
 	align-items: center;
-	flex: 0.45;
+	flex: 1;
 	padding: 18px 0;
 	border-right: 1px solid whitesmoke;
 }
@@ -56,9 +56,10 @@
 
 .headerRight-profile {
 	flex: 1;
-	border-right: 1px solid whitesmoke;
 }
 
-.other {
+.otherItem {
+	border-left: 1px solid whitesmoke;
 	border-right: 1px solid whitesmoke;
+	margin-right: 20px;
 }
