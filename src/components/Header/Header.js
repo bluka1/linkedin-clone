@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import MenuItem from '../MenuItem/MenuItem';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 
@@ -17,11 +19,21 @@ function Header() {
 			<div className={styles.headerLeft}>
 				<img src={logoIcon} alt="logo" />
 				<div className={styles['headerLeft-options']}>
-					<MenuItem source={rssIcon} text="feed" />
-					<MenuItem source={usersIcon} text="network" />
-					<MenuItem source={briefcaseIcon} text="jobs" />
-					<MenuItem source={msgIcon} text="chat" />
-					<MenuItem source={bellIcon} text="notices" />
+					<NavLink to="/">
+						<MenuItem source={rssIcon} text="feed" />
+					</NavLink>
+					<NavLink to="/network">
+						<MenuItem source={usersIcon} text="network" />
+					</NavLink>
+					<NavLink to="/jobs">
+						<MenuItem source={briefcaseIcon} text="jobs" />
+					</NavLink>
+					<NavLink to="/chat">
+						<MenuItem source={msgIcon} text="chat" />
+					</NavLink>
+					<NavLink to="/notices">
+						<MenuItem source={bellIcon} text="notices" />
+					</NavLink>
 				</div>
 			</div>
 			<div className={styles.headerRight}>
