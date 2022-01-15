@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
 	--grey-primary: #f4f4f4;
@@ -8,11 +8,11 @@
 	--green-primary: #02b033;
 	--black-primary: #181818;
 	--blue-primary: #0275b1;
+	--white-primary: #ffffff;
 }
 
 body {
 	margin: 0;
-	font-family: 'Gothic A1', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	letter-spacing: 1px;
 }

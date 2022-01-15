@@ -18,19 +18,19 @@ function Footer() {
 			<div className={styles.footerNavigation}>
 				<h3>Navigation</h3>
 				<div className={styles.footerNavigationColumns}>
-					<ul className={styles.footerNavigationList}>
+					<ul className={styles.footerNavigationColumn}>
 						<li>About</li>
 						<li>Careers</li>
 						<li>Advertising</li>
 						<li>Small business</li>
 					</ul>
-					<ul className={styles.footerNavigationList}>
+					<ul className={styles.footerNavigationColumn}>
 						<li>Talent Solutions</li>
 						<li>Marketing Solutions</li>
 						<li>Sales Solutions</li>
 						<li>Safery Center</li>
 					</ul>
-					<ul className={styles.footerNavigationList}>
+					<ul className={styles.footerNavigationColumn}>
 						<li>Community Guidelines</li>
 						<li>Privacy & Terms</li>
 						<li>Mobile App</li>
@@ -41,11 +41,11 @@ function Footer() {
 			<div className={styles.footerFastAccess}>
 				<h3>Fast access</h3>
 				<div>
-					<div>
+					<div className={`${styles.fastAccessBtn} ${styles.fastAccessQuestions}`}>
 						<span>QUESTIONS?</span>
 						<img src={questionmarkIcon} alt="questionmark" />
 					</div>
-					<div>
+					<div className={`${styles.fastAccessBtn} ${styles.fastAccessSettings}`}>
 						<span>SETTINGS</span>
 						<img src={settingsIcon} alt="settings" />
 					</div>
@@ -54,7 +54,7 @@ function Footer() {
 
 			<div className={styles.footerLanguage}>
 				<h3>Language</h3>
-				<div>
+				<div className={styles.footerLanguageBtn}>
 					<span>ENGLISH</span>
 					<img src={chevronIcon} alt="settings" />
 				</div>
