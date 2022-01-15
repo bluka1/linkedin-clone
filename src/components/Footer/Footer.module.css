@@ -24,7 +24,7 @@
 }
 
 .footerLogo {
-	margin-right: 70px;
+	flex: 0.15;
 }
 
 .footerLogo > img {
@@ -43,6 +43,10 @@
 	color: var(--blue-primary);
 }
 
+.footerNavigation {
+	flex: 0.45;
+}
+
 .footerNavigationColumns {
 	display: flex;
 }
@@ -51,16 +55,13 @@
 	flex: 1;
 }
 
-.footerNavigationColumns ul {
-	margin-right: 50px;
-}
-
 .footerNavigationColumns li {
 	margin-bottom: 10px;
 }
 
 .footerFastAccess {
-	margin-right: 60px;
+	flex: 0.15;
+	margin-right: 120px;
 }
 
 .fastAccessBtn {
@@ -88,6 +89,10 @@
 .fastAccessSettings {
 	color: var(--blue-primary);
 	border: 1px solid var(--blue-primary);
+}
+
+.footerLanguage {
+	flex: 0.2;
 }
 
 .footerLanguageBtn {
