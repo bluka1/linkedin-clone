@@ -1,0 +1,27 @@
+.footer {
+	display: flex;
+	background-color: var(--grey-quaternary);
+	font-size: 12px;
+}
+
+.footer h3 {
+	font-size: 12px;
+}
+
+.footer ul {
+	list-style-type: none;
+}
+
+.footerLogo > img {
+	width: 46px;
+}
+
+.footerLogo > p {
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0;
+}
+
+.logoText {
+	color: var(--blue-primary);
+}
