@@ -12,6 +12,8 @@
 
 .btn:hover {
 	cursor: pointer;
+	font-size: 14px;
+	border: 1px solid var(--black-primary);
 }
 
 .filled {

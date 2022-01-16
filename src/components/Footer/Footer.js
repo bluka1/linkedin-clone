@@ -1,19 +1,28 @@
 import { Link } from 'react-router-dom';
+
+import Button from '../Button/Button';
 import Select from 'react-select';
 
 import questionmarkIcon from '../../img/questionmark.svg';
 import settingsIcon from '../../img/settings.svg';
-import chevronIcon from '../../img/chevron-down.svg';
-
-import styles from './Footer.module.css';
 import logoIcon from '../../img/blue-logo.svg';
-import Button from '../Button/Button';
+import styles from './Footer.module.css';
 
 function Footer() {
 	const options = [
 		{ value: 'ENGLISH', label: 'ENGLISH' },
 		{ value: 'CROATIAN', label: 'CROATIAN' },
 	];
+
+	const selectStyles = {
+		control: (styles) => ({
+			...styles,
+			backgroundColor: 'white',
+			border: 0,
+			color: 'black',
+			cursor: 'pointer',
+		}),
+	};
 
 	return (
 		<div className={styles.footer}>
@@ -77,11 +86,7 @@ function Footer() {
 
 			<div className={styles.footerLanguage}>
 				<h3>Language</h3>
-				<Select options={options} />
-				<div className={styles.footerLanguageBtn}>
-					<span>ENGLISH</span>
-					<img src={chevronIcon} alt="settings" />
-				</div>
+				<Select defaultValue={options[0]} options={options} styles={selectStyles} />
 			</div>
 		</div>
 	);

@@ -29,11 +29,10 @@
 }
 
 .footer li:hover {
-	text-align: center;
 	font-size: 14px;
 	padding: 2px 5px;
-	background-color: var(--blue-primary);
-	color: var(--white-primary);
+	background-color: var(--white-primary);
+	border: 1px solid var(--black-primary);
 	border-radius: 4px;
 }
 
@@ -44,6 +43,7 @@
 .footerLogo > img {
 	width: 46px;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 .footerLogo > p {
@@ -51,6 +51,7 @@
 	font-weight: 700;
 	line-height: 21px;
 	margin: 0;
+	cursor: pointer;
 }
 
 .logoText {
@@ -82,15 +83,6 @@
 	flex: 0.2;
 }
 
-.footerLanguageBtn {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: var(--white-primary);
-	padding: 10px 15px;
-	border-radius: 4px;
-}
-
-.footerLanguageBtn span {
-	margin-right: 175px;
+.footerSelect:hover {
+	cursor: pointer;
 }
