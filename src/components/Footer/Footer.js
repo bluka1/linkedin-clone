@@ -1,11 +1,20 @@
+import { Link } from 'react-router-dom';
+import Select from 'react-select';
+
 import questionmarkIcon from '../../img/questionmark.svg';
 import settingsIcon from '../../img/settings.svg';
 import chevronIcon from '../../img/chevron-down.svg';
 
 import styles from './Footer.module.css';
 import logoIcon from '../../img/blue-logo.svg';
+import Button from '../Button/Button';
 
 function Footer() {
+	const options = [
+		{ value: 'ENGLISH', label: 'ENGLISH' },
+		{ value: 'CROATIAN', label: 'CROATIAN' },
+	];
+
 	return (
 		<div className={styles.footer}>
 			<div className={styles.footerLogo}>
@@ -19,41 +28,56 @@ function Footer() {
 				<h3>Navigation</h3>
 				<div className={styles.footerNavigationColumns}>
 					<ul className={styles.footerNavigationColumn}>
-						<li>About</li>
-						<li>Careers</li>
-						<li>Advertising</li>
-						<li>Small business</li>
+						<Link to="/notimplemented">
+							<li>About</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Careers</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Advertising</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Small business</li>
+						</Link>
 					</ul>
 					<ul className={styles.footerNavigationColumn}>
-						<li>Talent Solutions</li>
-						<li>Marketing Solutions</li>
-						<li>Sales Solutions</li>
-						<li>Safery Center</li>
+						<Link to="/notimplemented">
+							<li>Talent Solutions</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Marketing Solutions</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Sales Solutions</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Safery Center</li>
+						</Link>
 					</ul>
 					<ul className={styles.footerNavigationColumn}>
-						<li>Community Guidelines</li>
-						<li>Privacy & Terms</li>
-						<li>Mobile App</li>
+						<Link to="/notimplemented">
+							<li>Community Guidelines</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Privacy & Terms</li>
+						</Link>
+						<Link to="/notimplemented">
+							<li>Mobile App</li>
+						</Link>
 					</ul>
 				</div>
 			</div>
 
 			<div className={styles.footerFastAccess}>
 				<h3>Fast access</h3>
-				<div>
-					<div className={`${styles.fastAccessBtn} ${styles.fastAccessQuestions}`}>
-						<span>QUESTIONS?</span>
-						<img src={questionmarkIcon} alt="questionmark" />
-					</div>
-					<div className={`${styles.fastAccessBtn} ${styles.fastAccessSettings}`}>
-						<span>SETTINGS</span>
-						<img src={settingsIcon} alt="settings" />
-					</div>
-				</div>
+				<Button text="QUESTIONS?" icon={questionmarkIcon} variant="filled" />
+				<Button text="SETTINGS" icon={settingsIcon} variant="outlined" />
 			</div>
 
 			<div className={styles.footerLanguage}>
 				<h3>Language</h3>
+				<Select options={options} />
 				<div className={styles.footerLanguageBtn}>
 					<span>ENGLISH</span>
 					<img src={chevronIcon} alt="settings" />

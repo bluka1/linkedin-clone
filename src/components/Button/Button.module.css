@@ -1,0 +1,27 @@
+.btn {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.filled {
+	background-color: var(--blue-primary);
+	color: var(--white-primary);
+	border: none;
+}
+
+.outlined {
+	background-color: var(--white-primary);
+	color: var(--blue-primary);
+	border: 1px solid var(--blue-primary);
+}

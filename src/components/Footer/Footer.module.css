@@ -23,6 +23,20 @@
 	white-space: nowrap;
 }
 
+.footer a {
+	text-decoration: none;
+	color: var(--black-primary);
+}
+
+.footer li:hover {
+	text-align: center;
+	font-size: 14px;
+	padding: 2px 5px;
+	background-color: var(--blue-primary);
+	color: var(--white-primary);
+	border-radius: 4px;
+}
+
 .footerLogo {
 	flex: 0.15;
 }
@@ -62,33 +76,6 @@
 .footerFastAccess {
 	flex: 0.15;
 	margin-right: 120px;
-}
-
-.fastAccessBtn {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-radius: 4px;
-	margin-bottom: 10px;
-}
-
-.fastAccessBtn span {
-	padding: 10px;
-	margin-right: 30px;
-}
-
-.fastAccessBtn img {
-	padding: 10px;
-}
-
-.fastAccessQuestions {
-	background-color: var(--blue-primary);
-	color: var(--white-primary);
-}
-
-.fastAccessSettings {
-	color: var(--blue-primary);
-	border: 1px solid var(--blue-primary);
 }
 
 .footerLanguage {
