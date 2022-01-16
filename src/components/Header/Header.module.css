@@ -28,6 +28,10 @@
 	border-right: 1px solid var(--grey-primary);
 }
 
+.headerLeft-options > a {
+	text-decoration: none;
+}
+
 .headerRight {
 	display: flex;
 	flex: 0.55;
