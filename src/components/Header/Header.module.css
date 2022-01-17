@@ -5,6 +5,10 @@
 	border-bottom: 1px solid var(--grey-primary);
 }
 
+.header a {
+	color: black;
+}
+
 .headerLeft {
 	display: flex;
 	flex: 0.45;
@@ -77,4 +81,9 @@
 	border-left: 1px solid var(--grey-primary);
 	border-right: 1px solid var(--grey-primary);
 	margin-right: 40px;
+}
+
+.active {
+	border-bottom: 2px solid var(--blue-primary);
+	color: var(--blue-primary) !important;
 }

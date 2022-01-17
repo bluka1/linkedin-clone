@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import MenuItem from '../MenuItem/MenuItem';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
@@ -14,24 +14,26 @@ import { ReactComponent as LogoIcon } from '../../img/blue-logo.svg';
 import styles from './Header.module.css';
 
 function Header() {
+	const match = useLocation();
+
 	return (
 		<div className={styles.header}>
 			<div className={styles.headerLeft}>
 				<LogoIcon />
 				<div className={styles['headerLeft-options']}>
-					<NavLink to="/">
+					<NavLink to="/" className={match.pathname === '/' ? styles.active : ''}>
 						<MenuItem Icon={rssIcon} text="feed" />
 					</NavLink>
-					<NavLink to="/network">
+					<NavLink to="/network" className={match.pathname === '/network' ? styles.active : ''}>
 						<MenuItem Icon={usersIcon} text="network" />
 					</NavLink>
-					<NavLink to="/jobs">
+					<NavLink to="/jobs" className={match.pathname === '/jobs' ? styles.active : ''}>
 						<MenuItem Icon={briefcaseIcon} text="jobs" />
 					</NavLink>
-					<NavLink to="/chat">
+					<NavLink to="/chat" className={match.pathname === '/chat' ? styles.active : ''}>
 						<MenuItem Icon={msgIcon} text="chat" />
 					</NavLink>
-					<NavLink to="/notices">
+					<NavLink to="/notices" className={match.pathname === '/notices' ? styles.active : ''}>
 						<MenuItem Icon={bellIcon} text="notices" />
 					</NavLink>
 				</div>
