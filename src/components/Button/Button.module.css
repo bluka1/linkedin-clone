@@ -12,6 +12,7 @@
 
 .btn:hover {
 	cursor: pointer;
+	opacity: 0.6;
 }
 
 .filled {
@@ -20,16 +21,8 @@
 	border: none;
 }
 
-.filled:hover {
-	opacity: 0.7;
-}
-
 .outlined {
 	background-color: var(--white-primary);
 	color: var(--blue-primary);
 	border: 1px solid var(--blue-primary);
-}
-
-.outlined:hover {
-	opacity: 0.7;
 }
