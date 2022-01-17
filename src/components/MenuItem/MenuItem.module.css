@@ -5,6 +5,12 @@
 	align-items: center;
 	color: var(--black-primary);
 	margin: 0 20px;
+	cursor: pointer;
+}
+
+.menuItem svg {
+	width: 24px;
+	height: 24px;
 }
 
 .text {

@@ -13,8 +13,9 @@
 	align-items: center;
 }
 
-.headerLeft > img {
+.headerLeft > svg {
 	width: 46px;
+	height: 46px;
 	padding: 18px 42px 18px 22px;
 	border-right: 1px solid var(--grey-primary);
 }
@@ -47,7 +48,9 @@
 	padding: 18px 0;
 }
 
-.search > img {
+.search > svg {
+	width: 24px;
+	height: 24px;
 	margin-right: 20px;
 }
 

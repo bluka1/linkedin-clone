@@ -1,5 +1,27 @@
 .notImplemented {
+	height: calc(100vh - 311px);
+	overflow-y: scroll;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.notImplemented > svg {
+	width: 400px;
+	height: 400px;
+}
+
+.links {
+	display: flex;
+}
+
+.links a {
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--blue-primary);
+	color: var(--white-primary);
+	margin: 10px;
+	padding: 5px 10px;
 }

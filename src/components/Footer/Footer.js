@@ -1,92 +1,79 @@
 import { Link } from 'react-router-dom';
 
 import Button from '../Button/Button';
-import SelectBtn from '../Select/SelectBtn';
+import Select from '../Select/Select';
 
-import questionmarkIcon from '../../img/questionmark.svg';
-import settingsIcon from '../../img/settings.svg';
-import logoIcon from '../../img/blue-logo.svg';
+import { ReactComponent as questionmarkIcon } from '../../img/questionmark.svg';
+import { ReactComponent as settingsIcon } from '../../img/settings.svg';
+import { ReactComponent as LogoIcon } from '../../img/blue-logo.svg';
 import styles from './Footer.module.css';
 
 function Footer() {
-	const selectOptions = [
-		{ value: 'ENGLISH', label: 'ENGLISH' },
-		{ value: 'CROATIAN', label: 'CROATIAN' },
-	];
-
-	const selectStyles = {
-		control: (styles) => ({
-			...styles,
-			backgroundColor: 'white',
-			border: 0,
-			color: 'black',
-			cursor: 'pointer',
-		}),
-	};
-
 	return (
 		<div className={styles.footer}>
-			<div className={styles.footerLogo}>
-				<img src={logoIcon} alt="logo" />
-				<p>
-					Linked<span className={styles.logoText}>In</span>
-				</p>
-			</div>
-
-			<div className={styles.footerNavigation}>
-				<h3>Navigation</h3>
-				<div className={styles.footerNavigationColumns}>
-					<ul className={styles.footerNavigationColumn}>
-						<Link to="/notimplemented">
-							<li>About</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Careers</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Advertising</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Small business</li>
-						</Link>
-					</ul>
-					<ul className={styles.footerNavigationColumn}>
-						<Link to="/notimplemented">
-							<li>Talent Solutions</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Marketing Solutions</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Sales Solutions</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Safery Center</li>
-						</Link>
-					</ul>
-					<ul className={styles.footerNavigationColumn}>
-						<Link to="/notimplemented">
-							<li>Community Guidelines</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Privacy & Terms</li>
-						</Link>
-						<Link to="/notimplemented">
-							<li>Mobile App</li>
-						</Link>
-					</ul>
+			<div className={styles.footerContainer}>
+				<div className={styles.footerLogo}>
+					<LogoIcon />
+					<p>
+						Linked<span className={styles.logoText}>In</span>
+					</p>
 				</div>
-			</div>
 
-			<div className={styles.footerFastAccess}>
-				<h3>Fast access</h3>
-				<Button text="QUESTIONS?" icon={questionmarkIcon} variant="filled" />
-				<Button text="SETTINGS" icon={settingsIcon} variant="outlined" />
-			</div>
+				<div className={styles.footerNavigation}>
+					<h3>Navigation</h3>
+					<div className={styles.footerNavigationColumns}>
+						<ul className={styles.footerNavigationColumn}>
+							<li>
+								<Link to="/notimplemented">About</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Careers</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Advertising</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Small business</Link>
+							</li>
+						</ul>
+						<ul className={styles.footerNavigationColumn}>
+							<li>
+								<Link to="/notimplemented">Talent Solutions</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Marketing Solutions</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Sales Solutions</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Safery Center</Link>
+							</li>
+						</ul>
+						<ul className={styles.footerNavigationColumn}>
+							<li>
+								<Link to="/notimplemented">Community Guidelines</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Privacy & Terms</Link>
+							</li>
+							<li>
+								<Link to="/notimplemented">Mobile App</Link>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-			<div className={styles.footerLanguage}>
-				<h3>Language</h3>
-				<SelectBtn defaultValue={selectOptions[0]} options={selectOptions} styles={selectStyles} />
+				<div className={styles.footerFastAccess}>
+					<h3>Fast access</h3>
+					<Button text="QUESTIONS?" Icon={questionmarkIcon} variant="filled" iconPlacement="right" />
+					<Button text="SETTINGS" Icon={settingsIcon} variant="outlined" iconPlacement="right" />
+				</div>
+
+				<div className={styles.footerLanguage}>
+					<h3>Language</h3>
+					<Select />
+				</div>
 			</div>
 		</div>
 	);
