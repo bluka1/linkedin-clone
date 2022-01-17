@@ -29,11 +29,7 @@
 }
 
 .footer li:hover {
-	font-size: 14px;
-	padding: 2px 5px;
-	background-color: var(--white-primary);
-	border: 1px solid var(--black-primary);
-	border-radius: 4px;
+	color: var(--blue-primary);
 }
 
 .footerLogo {
@@ -85,4 +81,43 @@
 
 .footerSelect:hover {
 	cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+	.footerLogo {
+		flex: 0.1;
+	}
+
+	.footerNavigation {
+		flex: 0.5;
+	}
+
+	.footerFastAccess {
+		flex: 0.2;
+		margin-right: 60px;
+	}
+
+	.footerLanguage {
+		flex: 0.2;
+	}
+}
+
+@media (max-width: 1300px) {
+	.footerLogo {
+		flex: 0.07;
+	}
+
+	.footerNavigation {
+		margin-left: 40px;
+		flex: 0.63;
+	}
+
+	.footerFastAccess {
+		flex: 0.15;
+		margin-right: 40px;
+	}
+
+	.footerLanguage {
+		flex: 0.15;
+	}
 }

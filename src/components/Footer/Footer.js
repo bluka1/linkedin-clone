@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Button from '../Button/Button';
-import Select from 'react-select';
+import SelectBtn from '../Select/SelectBtn';
 
 import questionmarkIcon from '../../img/questionmark.svg';
 import settingsIcon from '../../img/settings.svg';
@@ -9,7 +9,7 @@ import logoIcon from '../../img/blue-logo.svg';
 import styles from './Footer.module.css';
 
 function Footer() {
-	const options = [
+	const selectOptions = [
 		{ value: 'ENGLISH', label: 'ENGLISH' },
 		{ value: 'CROATIAN', label: 'CROATIAN' },
 	];
@@ -86,7 +86,7 @@ function Footer() {
 
 			<div className={styles.footerLanguage}>
 				<h3>Language</h3>
-				<Select defaultValue={options[0]} options={options} styles={selectStyles} />
+				<SelectBtn defaultValue={selectOptions[0]} options={selectOptions} styles={selectStyles} />
 			</div>
 		</div>
 	);
