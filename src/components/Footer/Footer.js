@@ -72,7 +72,13 @@ function Footer() {
 
 				<div className={styles.footerLanguage}>
 					<h3>Language</h3>
-					<Select />
+					<Select
+						selectOptions={[
+							{ value: 'ENGLISH', label: 'ENGLISH' },
+							{ value: 'CROATIAN', label: 'CROATIAN' },
+						]}
+						defaultValue={{ value: 'ENGLISH', label: 'ENGLISH' }}
+					/>
 				</div>
 			</div>
 		</div>

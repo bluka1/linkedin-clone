@@ -1,11 +1,6 @@
 import ReactSelect from 'react-select';
 
-function Select() {
-	const selectOptions = [
-		{ value: 'ENGLISH', label: 'ENGLISH' },
-		{ value: 'CROATIAN', label: 'CROATIAN' },
-	];
-
+function Select(props) {
 	const selectStyles = {
 		control: (styles) => ({
 			...styles,
@@ -21,7 +16,7 @@ function Select() {
 		indicatorSeparator: (base) => ({ ...base, display: 'none' }),
 	};
 
-	return <ReactSelect defaultValue={selectOptions[0]} options={selectOptions} styles={selectStyles} />;
+	return <ReactSelect defaultValue={props.defaultValue} options={props.selectOptions} styles={selectStyles} />;
 }
 
 export default Select;

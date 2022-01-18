@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import MenuItem from '../MenuItem/MenuItem';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
@@ -14,26 +14,24 @@ import { ReactComponent as LogoIcon } from '../../img/blue-logo.svg';
 import styles from './Header.module.css';
 
 function Header() {
-	const match = useLocation();
-
 	return (
 		<div className={styles.header}>
 			<div className={styles.headerLeft}>
 				<LogoIcon />
 				<div className={styles['headerLeft-options']}>
-					<NavLink to="/" className={match.pathname === '/' ? styles.active : ''}>
+					<NavLink to="/" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 						<MenuItem Icon={rssIcon} text="feed" />
 					</NavLink>
-					<NavLink to="/network" className={match.pathname === '/network' ? styles.active : ''}>
+					<NavLink to="/network" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 						<MenuItem Icon={usersIcon} text="network" />
 					</NavLink>
-					<NavLink to="/jobs" className={match.pathname === '/jobs' ? styles.active : ''}>
+					<NavLink to="/jobs" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 						<MenuItem Icon={briefcaseIcon} text="jobs" />
 					</NavLink>
-					<NavLink to="/chat" className={match.pathname === '/chat' ? styles.active : ''}>
+					<NavLink to="/chat" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 						<MenuItem Icon={msgIcon} text="chat" />
 					</NavLink>
-					<NavLink to="/notices" className={match.pathname === '/notices' ? styles.active : ''}>
+					<NavLink to="/notices" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 						<MenuItem Icon={bellIcon} text="notices" />
 					</NavLink>
 				</div>
