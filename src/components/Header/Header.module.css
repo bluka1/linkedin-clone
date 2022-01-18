@@ -7,6 +7,7 @@
 
 .header a {
 	color: black;
+	border-bottom: 2px solid transparent;
 }
 
 .header a.active {
@@ -40,7 +41,7 @@
 
 .headerLeft-options > a {
 	text-decoration: none;
-	padding: 18px 0px;
+	padding: 18px 0px 15px 0;
 }
 
 .headerRight {
@@ -55,13 +56,14 @@
 	display: flex;
 	align-items: center;
 	flex: 1;
-	padding: 18px 0;
+	padding: 18px 0 17px 0;
 }
 
 .search > svg {
 	width: 24px;
 	height: 24px;
 	margin-right: 20px;
+	color: var(--blue-primary);
 }
 
 .search > input {
@@ -82,7 +84,7 @@
 }
 
 .otherItem {
-	padding: 18px 0;
+	padding: 18px 0 17px 0;
 	border-left: 1px solid var(--grey-primary);
 	border-right: 1px solid var(--grey-primary);
 	margin-right: 40px;
