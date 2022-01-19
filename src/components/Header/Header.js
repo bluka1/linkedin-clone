@@ -3,49 +3,49 @@ import { NavLink } from 'react-router-dom';
 import MenuItem from '../MenuItem/MenuItem';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 
-import rssIcon from '../../img/rss.svg';
-import usersIcon from '../../img/users.svg';
-import briefcaseIcon from '../../img/briefcase.svg';
-import msgIcon from '../../img/msg.svg';
-import bellIcon from '../../img/bell.svg';
-import searchIcon from '../../img/search.svg';
-import moreIcon from '../../img/more.svg';
-import logoIcon from '../../img/blue-logo.svg';
+import { ReactComponent as rssIcon } from '../../img/rss.svg';
+import { ReactComponent as usersIcon } from '../../img/users.svg';
+import { ReactComponent as briefcaseIcon } from '../../img/briefcase.svg';
+import { ReactComponent as msgIcon } from '../../img/msg.svg';
+import { ReactComponent as bellIcon } from '../../img/bell.svg';
+import { ReactComponent as SearchIcon } from '../../img/search.svg';
+import { ReactComponent as moreIcon } from '../../img/more.svg';
+import { ReactComponent as LogoIcon } from '../../img/blue-logo.svg';
 import styles from './Header.module.css';
 
 function Header() {
 	return (
 		<div className={styles.header}>
 			<div className={styles.headerLeft}>
-				<img src={logoIcon} alt="logo" />
+				<LogoIcon />
 				<div className={styles['headerLeft-options']}>
-					<NavLink to="/">
-						<MenuItem source={rssIcon} text="feed" />
+					<NavLink to="/" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<MenuItem Icon={rssIcon} text="feed" />
 					</NavLink>
-					<NavLink to="/network">
-						<MenuItem source={usersIcon} text="network" />
+					<NavLink to="/network" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<MenuItem Icon={usersIcon} text="network" />
 					</NavLink>
-					<NavLink to="/jobs">
-						<MenuItem source={briefcaseIcon} text="jobs" />
+					<NavLink to="/jobs" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<MenuItem Icon={briefcaseIcon} text="jobs" />
 					</NavLink>
-					<NavLink to="/chat">
-						<MenuItem source={msgIcon} text="chat" />
+					<NavLink to="/chat" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<MenuItem Icon={msgIcon} text="chat" />
 					</NavLink>
-					<NavLink to="/notices">
-						<MenuItem source={bellIcon} text="notices" />
+					<NavLink to="/notices" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<MenuItem Icon={bellIcon} text="notices" />
 					</NavLink>
 				</div>
 			</div>
 			<div className={styles.headerRight}>
 				<div className={styles.search}>
-					<img src={searchIcon} alt="Search" />
+					<SearchIcon />
 					<input type="text" placeholder="Search" />
 				</div>
 				<div className={styles['headerRight-profile']}>
 					<ProfileInfo />
 				</div>
 				<div className={styles.otherItem}>
-					<MenuItem source={moreIcon} text="other" />
+					<MenuItem Icon={moreIcon} text="other" />
 				</div>
 			</div>
 		</div>

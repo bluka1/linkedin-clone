@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import Jobs from './components/Jobs/Jobs';
 import Network from './components/Network/Network';
 import Notices from './components/Notices/Notices';
+import NotImplemented from './components/NotImplemented/NotImplemented';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
@@ -18,7 +20,9 @@ function App() {
 					<Route path="/jobs" element={<Jobs />} />
 					<Route path="/chat" element={<Chat />} />
 					<Route path="/notices" element={<Notices />} />
+					<Route path="/notimplemented" element={<NotImplemented />} />
 				</Routes>
+				<Footer />
 			</Router>
 		</div>
 	);
