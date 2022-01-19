@@ -8,6 +8,7 @@ import Network from './components/Network/Network';
 import Notices from './components/Notices/Notices';
 import NotImplemented from './components/NotImplemented/NotImplemented';
 import Footer from './components/Footer/Footer';
+import Profile from './components/Profile/Profile';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/jobs" element={<Jobs />} />
 					<Route path="/chat" element={<Chat />} />
 					<Route path="/notices" element={<Notices />} />
+					<Route path="/profile" element={<Profile />} />
 					<Route path="/notimplemented" element={<NotImplemented />} />
 				</Routes>
 				<Footer />

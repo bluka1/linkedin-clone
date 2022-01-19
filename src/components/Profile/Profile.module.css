@@ -1,0 +1,7 @@
+.profile {
+	display: flex;
+	justify-content: space-between;
+	background-color: yellow;
+	height: calc(100vh - 311px);
+	padding: 14px 130px 40px 130px;
+}
