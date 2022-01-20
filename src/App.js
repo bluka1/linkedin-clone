@@ -15,16 +15,20 @@ function App() {
 		<div className="app">
 			<Router>
 				<Header />
-				<Routes>
-					<Route path="/" element={<Feed />} />
-					<Route path="/network" element={<Network />} />
-					<Route path="/jobs" element={<Jobs />} />
-					<Route path="/chat" element={<Chat />} />
-					<Route path="/notices" element={<Notices />} />
-					<Route path="/profile" element={<Profile />} />
-					<Route path="/notimplemented" element={<NotImplemented />} />
-				</Routes>
-				<Footer />
+				<div className="content">
+					<div className="main">
+						<Routes>
+							<Route path="/" element={<Feed />} />
+							<Route path="/network" element={<Network />} />
+							<Route path="/jobs" element={<Jobs />} />
+							<Route path="/chat" element={<Chat />} />
+							<Route path="/notices" element={<Notices />} />
+							<Route path="/profile" element={<Profile />} />
+							<Route path="/notimplemented" element={<NotImplemented />} />
+						</Routes>
+					</div>
+					<Footer />
+				</div>
 			</Router>
 		</div>
 	);

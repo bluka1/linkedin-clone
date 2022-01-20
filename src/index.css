@@ -5,6 +5,7 @@
 	--grey-secondary: #747474;
 	--grey-tertiary: #cecece;
 	--grey-quaternary: #f7f9fb;
+	--grey-quinary: #e5e5e5;
 	--green-primary: #02b033;
 	--black-primary: #181818;
 	--blue-primary: #0275b1;
@@ -29,4 +30,10 @@ body {
 	flex: 1;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.main {
+	min-height: calc(100vh - 391px);
+	padding: 40px 130px;
+	background-color: var(--grey-quinary);
 }

@@ -1,7 +1,5 @@
 .profile {
-	display: flex;
+	display: grid;
+	grid-template-columns: 0.75fr 0.25fr;
 	gap: 40px;
-	background-color: yellow;
-	height: calc(100vh - 311px);
-	padding: 14px 130px 40px 130px;
 }
