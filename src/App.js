@@ -11,18 +11,20 @@ import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
-		<div>
+		<div className="app">
 			<Router>
 				<Header />
-				<Routes>
-					<Route path="/" element={<Feed />} />
-					<Route path="/network" element={<Network />} />
-					<Route path="/jobs" element={<Jobs />} />
-					<Route path="/chat" element={<Chat />} />
-					<Route path="/notices" element={<Notices />} />
-					<Route path="/notimplemented" element={<NotImplemented />} />
-				</Routes>
-				<Footer />
+				<div className="content">
+					<Routes>
+						<Route path="/" element={<Feed />} />
+						<Route path="/network" element={<Network />} />
+						<Route path="/jobs" element={<Jobs />} />
+						<Route path="/chat" element={<Chat />} />
+						<Route path="/notices" element={<Notices />} />
+						<Route path="/notimplemented" element={<NotImplemented />} />
+					</Routes>
+					<Footer />
+				</div>
 			</Router>
 		</div>
 	);
