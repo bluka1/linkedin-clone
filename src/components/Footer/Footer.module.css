@@ -1,11 +1,4 @@
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-}
-
-.footerContainer {
 	display: flex;
 	background-color: var(--grey-quaternary);
 	font-size: 12px;
