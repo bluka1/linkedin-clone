@@ -1,0 +1,22 @@
+.profileCard {
+	display: flex;
+	align-items: center;
+}
+
+.profileCard > svg {
+	width: 52px;
+	height: 52px;
+}
+
+.profileName {
+	font-size: 14px;
+	color: var(--black-primary);
+}
+
+.profileDescription {
+	font-size: 10px;
+	color: var(--black-primary);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

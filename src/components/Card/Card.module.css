@@ -1,5 +1,14 @@
 .card {
 	padding: 25px 30px;
+}
+
+.cardHeader {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cardHeader a {
+	text-decoration: none;
+	color: var(--blue-primary);
 }
