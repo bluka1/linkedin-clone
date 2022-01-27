@@ -15,6 +15,11 @@
 	color: var(--blue-primary);
 }
 
+.underlined > a {
+	text-decoration: underline;
+	color: var(--blue-primary);
+}
+
 .cardMain {
 	padding-top: 20px;
 }

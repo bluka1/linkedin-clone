@@ -8,6 +8,13 @@ function Card(props) {
 			<div className={styles.cardHeader}>
 				{props.cardHeader}
 				{props.headerLink ? <Link to="/notimplemented">{props.headerLink}</Link> : ''}
+				{props.headerUnderlinedLink ? (
+					<div className={styles.underlined}>
+						<Link to="/notimplemented">{props.headerUnderlinedLink}</Link>
+					</div>
+				) : (
+					''
+				)}
 			</div>
 			<div className={styles.cardMain}>{props.children}</div>
 		</div>
