@@ -1,0 +1,10 @@
+.courses {
+	display: grid;
+	gap: 19px;
+	margin-bottom: 29px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--blue-primary);
+}

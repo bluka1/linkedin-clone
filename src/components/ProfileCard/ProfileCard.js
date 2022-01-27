@@ -1,15 +1,14 @@
-import { Avatar } from '@material-ui/core';
 import styles from './ProfileCard.module.css';
 
-function ProfileCard(props) {
+function ProfileCard({ source, name, description }) {
 	return (
 		<div className={styles.profileCard}>
-			<div>
-				<Avatar />
+			<div className={styles.profileCardPicture}>
+				<img src={source} alt="personal photo" />
 			</div>
 			<div>
-				<p className={styles.profileName}>{props.name}</p>
-				<p className={styles.profileDescription}>{props.description}</p>
+				<p className={styles.profileName}>{name}</p>
+				<p className={styles.profileDescription}>{description}</p>
 			</div>
 		</div>
 	);

@@ -8,13 +8,21 @@
 	height: 52px;
 }
 
+.profileCardPicture {
+	margin-right: 15px;
+}
+
 .profileName {
 	font-size: 14px;
+	font-weight: bold;
+	line-height: 13.4px;
 	color: var(--black-primary);
+	margin-bottom: 5px;
 }
 
 .profileDescription {
 	font-size: 10px;
+	line-height: 15px;
 	color: var(--black-primary);
 	white-space: nowrap;
 	overflow: hidden;

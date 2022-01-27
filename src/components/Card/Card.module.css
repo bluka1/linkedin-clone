@@ -6,9 +6,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 19px;
+	border-bottom: 1px solid var(--grey-primary);
 }
 
 .cardHeader a {
 	text-decoration: none;
 	color: var(--blue-primary);
+}
+
+.cardMain {
+	padding-top: 20px;
 }
