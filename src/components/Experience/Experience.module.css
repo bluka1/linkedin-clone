@@ -1,0 +1,9 @@
+.experience {
+	display: flex;
+	gap: 16px;
+}
+
+.experience > img {
+	width: 54px;
+	height: 54px;
+}

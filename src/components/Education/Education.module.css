@@ -1,0 +1,9 @@
+.education {
+	display: flex;
+	gap: 16px;
+}
+
+.education > img {
+	width: 54px;
+	height: 54px;
+}
