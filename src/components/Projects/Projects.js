@@ -10,7 +10,9 @@ import styles from './Projects.module.css';
 function Projects() {
 	return (
 		<ProfileMainCard>
-			<h3>Projects</h3>&nbsp;<span>3 of 12</span>
+			<h3>
+				Projects&emsp;<span className={styles.projectsNumber}>3 of 12</span>
+			</h3>
 			<div className={styles.projects}>
 				<div className={styles.project}>
 					<img src={zara} alt="project image" />

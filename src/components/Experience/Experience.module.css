@@ -1,9 +1,46 @@
+.experiences {
+	display: grid;
+	gap: 20px;
+	color: var(--black-primary);
+}
+
 .experience {
 	display: flex;
 	gap: 16px;
 }
 
+.experience:nth-child(1) {
+	padding-bottom: 25px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
 .experience > img {
 	width: 54px;
 	height: 54px;
+}
+
+.experienceInfo > h5 {
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0;
+}
+
+.experienceInfo > p {
+	font-size: 10px;
+	line-height: 15px;
+	margin: 10px 0 0 0;
+}
+
+.period {
+	color: var(--blue-primary);
+}
+
+p.periodPart {
+	margin-top: 5px;
+}
+
+span.greyish {
+	color: var(--black-primary);
+	font-weight: lighter;
+	opacity: 0.95;
 }

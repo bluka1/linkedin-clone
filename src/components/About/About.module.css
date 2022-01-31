@@ -1,9 +1,9 @@
-h3 {
+h3.heading {
 	font-size: 18px;
 	margin: 0 0 15px 0;
 }
 
-p {
+p.description {
 	margin: 0 0 20px 0;
 }
 

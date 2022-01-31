@@ -7,3 +7,19 @@
 	width: 54px;
 	height: 54px;
 }
+
+.educationDetails > h5 {
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0 0 10px 0;
+}
+
+.educationDetails > p {
+	font-size: 10px;
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
+.educationDetails > p.degree {
+	margin-bottom: 5px;
+}

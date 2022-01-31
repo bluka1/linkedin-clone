@@ -10,7 +10,9 @@ function Education() {
 				<img src={school} alt="school image" />
 				<div className={styles.educationDetails}>
 					<h5>Moscow State Linguistic University</h5>
-					<p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
+					<p className={styles.degree}>
+						Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance
+					</p>
 					<p>2013 — 2017</p>
 					<p>Additional English classes and UX profile courses​.</p>
 				</div>

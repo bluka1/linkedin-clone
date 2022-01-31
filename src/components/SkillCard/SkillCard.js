@@ -1,6 +1,13 @@
 import styles from './SkillCard.module.css';
 
 function SkillCard(props) {
+	const skillsImages = [];
+	for (let i = 0; i < 5; i++) {
+		skillsImages.push(props.images[i]);
+	}
+
+	const endorsements = props.images.length - 5;
+
 	return (
 		<div className={styles.skillCard}>
 			<div className={styles.header}>
@@ -8,9 +15,10 @@ function SkillCard(props) {
 				<p className={styles.number}>{props.images.length}</p>
 			</div>
 			<div className={styles.images}>
-				{props.images.map((image) => {
-					<img src={image} alt="person picture" />;
+				{skillsImages.map((image) => {
+					return <img src={image} alt="person image" key={image} />;
 				})}
+				{endorsements > 0 ? <div className={styles.endorsementsNumber}>+{endorsements}</div> : ''}
 			</div>
 		</div>
 	);

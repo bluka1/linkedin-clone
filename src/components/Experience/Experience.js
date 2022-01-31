@@ -12,9 +12,15 @@ function Experience() {
 					<img src={freelance} alt="experience picture" />
 					<div className={styles.experienceInfo}>
 						<h5>Freelance UX/UI designer</h5>
-						<p>Self Employed</p>&nbsp;<span>Around the world</span>
-						<p>Jun 2016 — Present</p>&nbsp;<span>3 yrs 3 mos</span>
 						<p>
+							<span>Self Employed</span>&emsp;
+							<span className={styles.greyish}>Around the world</span>
+						</p>
+						<p className={styles.periodPart}>
+							<span className={styles.greyish}>Jun 2016 — Present</span>&emsp;
+							<span className={styles.period}>3 yrs 3 mos</span>
+						</p>
+						<p className={styles.description}>
 							Work with clients and web studios as freelancer. Work in next areas: eCommerce web projects; creative
 							landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.
 						</p>
@@ -24,9 +30,14 @@ function Experience() {
 					<img src={upwork} alt="experience picture" />
 					<div className={styles.experienceInfo}>
 						<h5>UX/UI designer</h5>
-						<p>Upwork</p>&nbsp;<span>International</span>
-						<p>Jun 2019 — Present</p>&nbsp;<span>3 mos</span>
 						<p>
+							<span>Upwork</span>&emsp;<span className={styles.greyish}>International</span>
+						</p>
+						<p className={styles.periodPart}>
+							<span className={styles.greyish}>Jun 2019 — Present</span>&emsp;
+							<span className={styles.period}>3 mos</span>
+						</p>
+						<p className={styles.description}>
 							New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design,
 							UX research.
 						</p>
