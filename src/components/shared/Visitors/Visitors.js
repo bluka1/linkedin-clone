@@ -1,10 +1,10 @@
-import DarleneIcon from '../../img/darlene.jpg';
-import TheresaIcon from '../../img/theresa.jpg';
-import BrandonIcon from '../../img/brandon.jpg';
-import KyleIcon from '../../img/kyle.jpg';
-import AudreyIcon from '../../img/audrey.jpg';
-import ProfileCard from '../ProfileCard/ProfileCard';
-import Card from '../Card/Card';
+import DarleneIcon from '../../../img/darlene.jpg';
+import TheresaIcon from '../../../img/theresa.jpg';
+import BrandonIcon from '../../../img/brandon.jpg';
+import KyleIcon from '../../../img/kyle.jpg';
+import AudreyIcon from '../../../img/audrey.jpg';
+import ProfileCard from '../../core/ProfileCard/ProfileCard';
+import Card from '../../core/Card/Card';
 
 import styles from './Visitors.module.css';
 

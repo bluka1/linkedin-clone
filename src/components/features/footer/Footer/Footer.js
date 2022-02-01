@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-import Button from '../Button/Button';
-import Select from '../Select/Select';
+import Button from '../../../core/Button/Button';
+import Select from '../../../core/Select/Select';
 
-import { ReactComponent as questionmarkIcon } from '../../img/questionmark.svg';
-import { ReactComponent as settingsIcon } from '../../img/settings.svg';
-import { ReactComponent as LogoIcon } from '../../img/blue-logo.svg';
+import { ReactComponent as questionmarkIcon } from '../../../../img/questionmark.svg';
+import { ReactComponent as settingsIcon } from '../../../../img/settings.svg';
+import { ReactComponent as LogoIcon } from '../../../../img/blue-logo.svg';
 import styles from './Footer.module.css';
 
 function Footer() {

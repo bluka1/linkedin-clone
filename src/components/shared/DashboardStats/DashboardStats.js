@@ -1,4 +1,4 @@
-import Card from '../Card/Card';
+import Card from '../../core/Card/Card';
 
 import styles from './DashboardStats.module.css';
 

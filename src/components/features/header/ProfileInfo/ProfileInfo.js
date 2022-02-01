@@ -1,6 +1,6 @@
 import { Avatar } from '@material-ui/core';
 
-import { ReactComponent as ArrowIcon } from '../../img/arrow.svg';
+import { ReactComponent as ArrowIcon } from '../../../../img/arrow.svg';
 import styles from './ProfileInfo.module.css';
 
 function ProfileInfo() {

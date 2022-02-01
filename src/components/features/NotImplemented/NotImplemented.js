@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as WarningIcon } from '../../img/warning.svg';
+import { ReactComponent as WarningIcon } from '../../../img/warning.svg';
 import styles from './NotImplemented.module.css';
 
 function NotImplemented() {

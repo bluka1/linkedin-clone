@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	box-shadow: inset -7px 0 70px -7px rgb(24, 24, 24, 0);
 }
 
 .courseCard > span {
@@ -32,9 +33,9 @@ p {
 	font-weight: bold;
 	line-height: 18px;
 	max-height: 36px;
+	width: 100%;
 	margin-bottom: 5px;
 	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .viewers {
