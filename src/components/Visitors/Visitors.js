@@ -10,12 +10,20 @@ import styles from './Visitors.module.css';
 
 function Visitors() {
 	return (
-		<Card cardHeader="VISITORS" headerLink="VIEW ALL" background="var(--white-secondary)">
+		<Card cardHeader="VISITORS" headerLink="VIEW ALL" background="whiteSecondary">
 			<div className={styles.profileVisitors}>
-				<ProfileCard source={DarleneIcon} name="Darlene Black" description="HR-manager, 10000 connec..." />
+				<ProfileCard
+					source={DarleneIcon}
+					name="Darlene Black"
+					description="HR-manager, 10000 connections and premium Linkedin member"
+				/>
 				<ProfileCard source={TheresaIcon} name="Theresa Steward" description="iOS developer" />
 				<ProfileCard source={BrandonIcon} name="Brandon Wilson" description="Senior UX designer" />
-				<ProfileCard source={KyleIcon} name="Kyle Fisher" description="Product designer at Com..." />
+				<ProfileCard
+					source={KyleIcon}
+					name="Kyle Fisher"
+					description="Product designer at Computers&Internet Company"
+				/>
 				<ProfileCard source={AudreyIcon} name="Audrey Alexander" description="Team lead at Google" />
 			</div>
 		</Card>

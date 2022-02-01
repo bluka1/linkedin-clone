@@ -42,7 +42,9 @@ function Header() {
 					<input type="text" placeholder="Search" />
 				</div>
 				<div className={styles['headerRight-profile']}>
-					<ProfileInfo />
+					<NavLink to="/profile">
+						<ProfileInfo />
+					</NavLink>
 				</div>
 				<div className={styles.otherItem}>
 					<MenuItem Icon={moreIcon} text="other" />

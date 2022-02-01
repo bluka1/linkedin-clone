@@ -1,5 +1,5 @@
 import CourseRecommendations from '../CourseRecommendations/CourseRecommendations';
-import Dashboard from '../Dashboard/Dashboard';
+import DashboardStats from '../DashboardStats/DashboardStats';
 import Visitors from '../Visitors/Visitors';
 
 import styles from './ProfileSidebar.module.css';
@@ -7,7 +7,7 @@ import styles from './ProfileSidebar.module.css';
 function ProfileSidebar() {
 	return (
 		<div className={styles.profileSidebar}>
-			<Dashboard />
+			<DashboardStats />
 			<Visitors />
 			<CourseRecommendations />
 		</div>
