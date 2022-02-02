@@ -1,6 +1,6 @@
-import styles from './SuggestionCard.module.css';
+import styles from './CourseCard.module.css';
 
-function SuggestionCard({ source, title, viewers, course, image }) {
+function CourseCard({ source, title, viewers, course, image }) {
 	return (
 		<div className={styles.courseCard}>
 			<div className={styles.picture}>
@@ -19,4 +19,4 @@ function SuggestionCard({ source, title, viewers, course, image }) {
 	);
 }
 
-export default SuggestionCard;
+export default CourseCard;
