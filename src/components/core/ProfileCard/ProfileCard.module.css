@@ -3,10 +3,9 @@
 	align-items: center;
 }
 
-.profileCard > svg {
+.profileCard > img {
 	width: 52px;
 	height: 52px;
-	border-radius: 50%;
 }
 
 .profileCardPicture {
@@ -22,7 +21,7 @@
 }
 
 .profileDescription {
-	width: 149px;
+	width: 150px;
 	font-size: 10px;
 	line-height: 15px;
 	color: var(--black-primary);

@@ -1,26 +1,39 @@
 .courseCard {
 	display: flex;
 	align-items: center;
-	position: relative;
+	cursor: pointer;
 	box-shadow: inset -7px 0 70px -7px rgb(24, 24, 24, 0);
 }
 
-.courseCard > span {
+.hoverImg {
 	display: none;
+	height: 18px;
+	width: 18px;
 }
 
-.courseCard:hover span {
-	display: block;
-	position: absolute;
-	z-index: 10;
-	top: 19px;
-	left: 30px;
+.picture {
+	margin-right: 15px;
+	position: relative;
 }
 
-.courseCard > img {
+.picture > img {
 	width: 80px;
 	height: 52px;
-	margin-right: 15px;
+}
+
+.courseCard:hover .hoverImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.courseCard:hover .hoverImg > img {
+	height: 18px;
+	width: 18px;
 }
 
 p {

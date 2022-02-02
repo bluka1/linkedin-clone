@@ -10,7 +10,7 @@ import styles from './Visitors.module.css';
 
 function Visitors() {
 	return (
-		<Card cardHeader="VISITORS" headerLink="VIEW ALL" background="whiteSecondary">
+		<Card cardHeader="VISITORS" headerLink="VIEW ALL" background="secondary">
 			<div className={styles.profileVisitors}>
 				<ProfileCard
 					source={DarleneIcon}

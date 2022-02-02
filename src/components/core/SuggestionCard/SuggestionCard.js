@@ -1,16 +1,16 @@
-import { ReactComponent as PlayIcon } from '../../../img/play.svg';
-
 import styles from './SuggestionCard.module.css';
 
-function SuggestionCard({ source, title, viewers, course }) {
+function SuggestionCard({ source, title, viewers, course, image }) {
 	return (
 		<div className={styles.courseCard}>
-			{course && (
-				<span>
-					<PlayIcon />
-				</span>
-			)}
-			<img src={source} alt="course picture" />
+			<div className={styles.picture}>
+				{course && (
+					<span className={styles.hoverImg}>
+						<img src={image} alt="card image" />
+					</span>
+				)}
+				<img src={source} alt="course picture" />
+			</div>
 			<div>
 				<p className={styles.title}>{title}</p>
 				<p className={styles.viewers}>{viewers} viewers</p>

@@ -4,7 +4,7 @@ import styles from './DashboardStats.module.css';
 
 function DashboardStats() {
 	return (
-		<Card cardHeader="YOUR DASHBOARD" headerLink="GO TO STATS" background="whitePrimary">
+		<Card cardHeader="YOUR DASHBOARD" headerLink="GO TO STATS" background="primary">
 			<div className={styles.dashboard}>
 				<div>
 					<p className={styles.statsNumber}>367</p>
