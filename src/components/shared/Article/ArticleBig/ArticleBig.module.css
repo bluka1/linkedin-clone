@@ -1,0 +1,15 @@
+.articleBig > img {
+	margin-bottom: 15px;
+}
+
+.articleBig > h5 {
+	margin: 0 0 5px 0;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.articleBig > p {
+	margin: 0;
+	font-size: 10px;
+	line-height: 15px;
+}

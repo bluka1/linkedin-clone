@@ -1,0 +1,43 @@
+.avatar > img {
+	border-radius: 50%;
+}
+
+.avatar.xxs > img {
+	width: 24px;
+	height: 24px;
+}
+
+.avatar.xs > img {
+	width: 32px;
+	height: 32px;
+}
+
+.avatar.s > img {
+	width: 42px;
+	height: 42px;
+}
+
+.avatar.m > img {
+	width: 46px;
+	height: 46px;
+}
+
+.avatar.l > img {
+	width: 52px;
+	height: 52px;
+}
+
+.avatar.xl > img {
+	width: 54px;
+	height: 54px;
+}
+
+.avatar.xxl > img {
+	width: 100px;
+	height: 100px;
+}
+
+.avatar.xxxl > img {
+	width: 170px;
+	height: 170pxs;
+}

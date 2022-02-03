@@ -8,7 +8,7 @@ import Network from './components/features/network/Network/Network';
 import Notices from './components/features/notices/Notices/Notices';
 import NotImplemented from './components/features/NotImplemented/NotImplemented';
 import Footer from './components/features/footer/Footer/Footer';
-import Profile from './components/features/profile/Profile/Profile';
+import Profile from './components/features/profile/Profile';
 
 function App() {
 	return (

@@ -1,4 +1,4 @@
-import CourseRecommendations from '../CourseRecommendations/CourseRecommendations';
+import CourseRecommendations from './CourseRecommendations/CourseRecommendations';
 import DashboardStats from '../../../shared/DashboardStats/DashboardStats';
 import Visitors from '../../../shared/Visitors/Visitors';
 

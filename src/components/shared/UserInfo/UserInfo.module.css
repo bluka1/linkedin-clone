@@ -1,18 +1,18 @@
-.profileCard {
+.userInfo {
 	display: flex;
 	align-items: center;
 }
 
-.profileCard > img {
+.userInfo > img {
 	width: 52px;
 	height: 52px;
 }
 
-.profileCardPicture {
+.userInfoPicture {
 	margin-right: 15px;
 }
 
-.profileName {
+.userName {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 13.4px;
@@ -20,7 +20,7 @@
 	margin-bottom: 5px;
 }
 
-.profileDescription {
+.userDescription {
 	width: 150px;
 	font-size: 10px;
 	line-height: 15px;
