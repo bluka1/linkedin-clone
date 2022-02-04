@@ -1,10 +1,10 @@
 import styles from './UserInfo.module.css';
 
-function UserInfo({ source, name, description }) {
+function UserInfo({ imageSrc, name, description }) {
 	return (
 		<div className={styles.userInfo}>
 			<div className={styles.userInfoPicture}>
-				<img src={source} alt="user photo" />
+				<img src={imageSrc} alt="user photo" />
 			</div>
 			<div>
 				<p className={styles.userName}>{name}</p>

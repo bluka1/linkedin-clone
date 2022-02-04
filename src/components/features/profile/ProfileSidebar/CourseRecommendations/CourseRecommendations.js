@@ -10,26 +10,26 @@ import styles from './CourseRecommendations.module.css';
 
 function CourseRecommendations() {
 	return (
-		<Card cardHeader="YOU MAY LIKE THESE COURSES" background="secondary">
+		<Card cardHeader="you may like these courses" background="secondary">
 			<div className={styles.courses}>
 				<Article
-					source={PrototypingIcon}
+					imageSrc={PrototypingIcon}
 					title="UX Foundations: Prototyping"
-					subtitle={27959}
+					subtitle="27959 viewers"
 					size="small"
 					articleType="video"
 				/>
 				<Article
-					source={AdobexdIcon}
+					imageSrc={AdobexdIcon}
 					title="Designing with Adobe XD and professional tools"
-					subtitle={9122}
+					subtitle="9122 viewers"
 					size="small"
 					articleType="video"
 				/>
 				<Article
-					source={StylesIcon}
+					imageSrc={StylesIcon}
 					title="UX Foundations: Styles and GUIs"
-					subtitle={13858}
+					subtitle="13858 viewers"
 					size="small"
 					articleType="video"
 				/>

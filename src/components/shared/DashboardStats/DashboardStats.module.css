@@ -13,6 +13,7 @@ p {
 .statsNumber {
 	font-size: 52px;
 	line-height: 50px;
+	font-weight: 600;
 	margin: 0;
 	padding: 0;
 	color: var(--blue-primary);

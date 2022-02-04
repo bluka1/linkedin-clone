@@ -10,17 +10,17 @@ import styles from './Visitors.module.css';
 
 function Visitors() {
 	return (
-		<Card cardHeader="VISITORS" headerLink="VIEW ALL" background="secondary">
+		<Card cardHeader="visitors" headerLink="VIEW ALL" background="secondary">
 			<div className={styles.profileVisitors}>
 				<UserInfo
-					source={DarleneIcon}
+					imageSrc={DarleneIcon}
 					name="Darlene Black"
 					description="HR-manager, 10000 connections and premium Linkedin member"
 				/>
-				<UserInfo source={TheresaIcon} name="Theresa Steward" description="iOS developer" />
-				<UserInfo source={BrandonIcon} name="Brandon Wilson" description="Senior UX designer" />
-				<UserInfo source={KyleIcon} name="Kyle Fisher" description="Product designer at Computers&Internet Company" />
-				<UserInfo source={AudreyIcon} name="Audrey Alexander" description="Team lead at Google" />
+				<UserInfo imageSrc={TheresaIcon} name="Theresa Steward" description="iOS developer" />
+				<UserInfo imageSrc={BrandonIcon} name="Brandon Wilson" description="Senior UX designer" />
+				<UserInfo imageSrc={KyleIcon} name="Kyle Fisher" description="Product designer at Computers&Internet Company" />
+				<UserInfo imageSrc={AudreyIcon} name="Audrey Alexander" description="Team lead at Google" />
 			</div>
 		</Card>
 	);

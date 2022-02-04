@@ -1,43 +1,43 @@
-.avatar > img {
+.avatar {
 	border-radius: 50%;
 }
 
-.avatar.xxs > img {
+.avatar.xxs {
 	width: 24px;
 	height: 24px;
 }
 
-.avatar.xs > img {
+.avatar.xs {
 	width: 32px;
 	height: 32px;
 }
 
-.avatar.s > img {
+.avatar.s {
 	width: 42px;
 	height: 42px;
 }
 
-.avatar.m > img {
+.avatar.m {
 	width: 46px;
 	height: 46px;
 }
 
-.avatar.l > img {
+.avatar.l {
 	width: 52px;
 	height: 52px;
 }
 
-.avatar.xl > img {
+.avatar.xl {
 	width: 54px;
 	height: 54px;
 }
 
-.avatar.xxl > img {
+.avatar.xxl {
 	width: 100px;
 	height: 100px;
 }
 
-.avatar.xxxl > img {
+.avatar.xxxl {
 	width: 170px;
-	height: 170pxs;
+	height: 170px;
 }
