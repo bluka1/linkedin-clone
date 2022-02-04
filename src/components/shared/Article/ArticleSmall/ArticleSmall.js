@@ -4,7 +4,7 @@ import styles from './ArticleSmall.module.css';
 
 function ArticleSmall({ imageSrc, title, subtitle, articleType }) {
 	return (
-		<div className={styles.article}>
+		<div className={styles.articleSmall}>
 			<div className={styles.picture}>
 				{articleType === 'video' && (
 					<span className={styles.hoverImg}>

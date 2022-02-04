@@ -22,15 +22,18 @@
 .cardHeader > h5 {
 	margin: 0;
 	font-size: 12px;
-	line-height: 11px;
+	line-height: 12px;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .cardHeader a {
 	text-decoration: none;
+	text-transform: uppercase;
 	color: var(--blue-primary);
 	font-size: 12px;
 	line-height: 11px;
+	font-weight: 600;
 }
 
 .cardHeader a:hover {

@@ -8,5 +8,10 @@ a {
 	text-decoration: none;
 	color: var(--blue-primary);
 	font-size: 12px;
-	line-height: 11px;
+	line-height: 12px;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: underline;
 }
