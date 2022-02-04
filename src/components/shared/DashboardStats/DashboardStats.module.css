@@ -1,0 +1,21 @@
+.dashboard {
+	display: grid;
+	gap: 20px;
+}
+
+p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+	color: var(--black-primary);
+}
+
+.statsNumber {
+	font-size: 52px;
+	line-height: 50px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	color: var(--blue-primary);
+}

@@ -7,16 +7,18 @@
 	--grey-quaternary: #f7f9fb;
 	--grey-quinary: #e5e5e5;
 	--grey-senary: #e7e7e7;
+	--grey-septenary: #e9f0f8;
 	--green-primary: #02b033;
 	--black-primary: #181818;
 	--blue-primary: #0275b1;
 	--white-primary: #ffffff;
+	--white-secondary: #fcfdfd;
 }
 
 body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .app {

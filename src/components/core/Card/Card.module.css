@@ -1,0 +1,45 @@
+.card {
+	padding: 25px 30px;
+}
+
+.card.primary {
+	background-color: var(--white-primary);
+}
+
+.card.secondary {
+	background-color: var(--white-secondary);
+}
+
+.cardHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	padding-bottom: 19px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.cardHeader > h5 {
+	margin: 0;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.cardHeader a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--blue-primary);
+	font-size: 12px;
+	line-height: 11px;
+	font-weight: 600;
+}
+
+.cardHeader a:hover {
+	text-decoration: underline;
+}
+
+.cardMain {
+	padding-top: 20px;
+}

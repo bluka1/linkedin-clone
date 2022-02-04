@@ -1,0 +1,17 @@
+.courses {
+	display: grid;
+	gap: 19px;
+	margin-bottom: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--blue-primary);
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: underline;
+}

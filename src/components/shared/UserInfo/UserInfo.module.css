@@ -1,0 +1,32 @@
+.userInfo {
+	display: flex;
+	align-items: center;
+}
+
+.userInfo > img {
+	width: 52px;
+	height: 52px;
+}
+
+.userInfoPicture {
+	margin-right: 15px;
+}
+
+.userName {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 13.4px;
+	color: var(--black-primary);
+	margin-bottom: 5px;
+}
+
+.userDescription {
+	width: 150px;
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 500;
+	color: var(--black-primary);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

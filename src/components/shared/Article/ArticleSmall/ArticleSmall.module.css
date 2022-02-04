@@ -1,0 +1,58 @@
+.articleSmall {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: inset -7px 0 70px -7px rgb(24, 24, 24, 0);
+}
+
+.articleSmall .picture {
+	margin-right: 15px;
+	position: relative;
+}
+
+.articleSmall .picture .hoverImg {
+	display: none;
+	height: 18px;
+	width: 18px;
+}
+
+.picture > img {
+	width: 80px;
+	height: 52px;
+}
+
+.articleSmall:hover .hoverImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.articleSmall:hover .hoverImg > img {
+	height: 18px;
+	width: 18px;
+}
+
+p {
+	margin: 0;
+}
+
+.articleSmall .title {
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	max-height: 36px;
+	width: 100%;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.articleSmall .subtitle {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 500;
+}
