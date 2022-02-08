@@ -29,11 +29,8 @@ p {
 	display: flex;
 }
 
-.images > img {
-	border-radius: 26px;
+.images > * {
 	margin-right: -10px;
-	width: 24px;
-	height: 24px;
 }
 
 .endorsementsNumber {
@@ -41,7 +38,6 @@ p {
 	justify-content: center;
 	align-items: center;
 	border-radius: 26px;
-	margin-right: -10px;
 	width: 24px;
 	height: 24px;
 	font-size: 10px;

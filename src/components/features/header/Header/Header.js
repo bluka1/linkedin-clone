@@ -47,7 +47,9 @@ function Header() {
 					</NavLink>
 				</div>
 				<div className={styles.otherItem}>
-					<MenuItem Icon={moreIcon} text="other" />
+					<NavLink to="/notimplemented" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<MenuItem Icon={moreIcon} text="other" />
+					</NavLink>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,144 @@
+.profileDescription {
+	display: grid;
+	grid-template-rows: 180px 180px;
+	background-color: var(--white-primary);
+}
+
+.profileBg {
+	position: relative;
+}
+
+.profileBg > img {
+	width: 100%;
+	max-height: 180px;
+	object-fit: cover;
+}
+
+.icons {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 790px;
+	padding: 20px 30px;
+}
+
+.icons > svg {
+	background-color: var(--white-primary);
+	padding: 10px;
+}
+
+.iconsRight {
+	display: flex;
+	gap: 10px;
+}
+
+.iconsRight > svg {
+	background-color: var(--white-primary);
+}
+
+.upload {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 4px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.upload > svg {
+	width: 16px;
+	height: 16px;
+}
+
+.edit {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 11px;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.more {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.more > svg {
+	width: 24px;
+	height: 24px;
+	padding: 6px;
+}
+
+.profileDetails {
+	display: flex;
+	gap: 25px;
+	padding: 25px;
+}
+
+.avatar {
+	transform: translateY(-45px);
+}
+
+.personalInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 15px 0;
+}
+
+.name {
+	display: flex;
+	align-items: center;
+}
+
+.name > h5 {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 8px 0 0;
+}
+
+.name > svg {
+	width: 16px;
+	height: 16px;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+}
+
+.location > svg {
+	width: 13px;
+	height: 13px;
+}
+
+.location > p {
+	margin: 0 0 0 10px;
+}
+
+.aboutProfile {
+	margin: 0 0 14px 0;
+}
+.btns {
+	display: flex;
+	gap: 15px;
+}
+
+.btns > button {
+	justify-content: center;
+	width: 100%;
+	max-width: 170px;
+	margin: 0;
+	font-weight: 600;
+}
+
+.btns .filled {
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+}

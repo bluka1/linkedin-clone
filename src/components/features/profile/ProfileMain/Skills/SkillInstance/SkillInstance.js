@@ -1,6 +1,7 @@
-import styles from './SkillCard.module.css';
+import Avatar from '../../../../../core/Avatar/Avatar';
+import styles from './SkillInstance.module.css';
 
-function SkillCard(props) {
+function SkillInstance(props) {
 	const skillsImages = [];
 	for (let i = 0; i < 5; i++) {
 		skillsImages.push(props.images[i]);
@@ -16,7 +17,7 @@ function SkillCard(props) {
 			</div>
 			<div className={styles.images}>
 				{skillsImages.map((image) => {
-					return <img src={image} alt="person image" key={image} />;
+					return <Avatar imageSrc={image} size="xxs" key={image} />;
 				})}
 				{endorsements > 0 ? <div className={styles.endorsementsNumber}>+{endorsements}</div> : ''}
 			</div>
@@ -24,4 +25,4 @@ function SkillCard(props) {
 	);
 }
 
-export default SkillCard;
+export default SkillInstance;

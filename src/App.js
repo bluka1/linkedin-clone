@@ -24,6 +24,8 @@ function App() {
 							<Route path="/chat" element={<Chat />} />
 							<Route path="/notices" element={<Notices />} />
 							<Route path="/profile" element={<Profile />} />
+							<Route path="/profile/articles" element={<NotImplemented />} />
+							<Route path="/profile/activityandinterests" element={<NotImplemented />} />
 							<Route path="/notimplemented" element={<NotImplemented />} />
 						</Routes>
 					</div>

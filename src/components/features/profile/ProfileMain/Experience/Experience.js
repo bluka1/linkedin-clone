@@ -1,5 +1,6 @@
-import freelance from '../../img/freelance.jpg';
-import upwork from '../../img/upwork.jpg';
+import freelance from '../../../../../img/freelance.jpg';
+import upwork from '../../../../../img/upwork.jpg';
+import Avatar from '../../../../core/Avatar/Avatar';
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import styles from './Experience.module.css';
 
@@ -9,7 +10,7 @@ function Experience() {
 			<h3>Experience</h3>
 			<div className={styles.experiences}>
 				<div className={styles.experience}>
-					<img src={freelance} alt="experience picture" />
+					<Avatar imageSrc={freelance} size="xl" />
 					<div className={styles.experienceInfo}>
 						<h5>Freelance UX/UI designer</h5>
 						<p>
@@ -27,7 +28,7 @@ function Experience() {
 					</div>
 				</div>
 				<div className={styles.experience}>
-					<img src={upwork} alt="experience picture" />
+					<Avatar imageSrc={upwork} size="xl" />
 					<div className={styles.experienceInfo}>
 						<h5>UX/UI designer</h5>
 						<p>

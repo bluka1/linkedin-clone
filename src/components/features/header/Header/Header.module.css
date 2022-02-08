@@ -2,7 +2,9 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1000;
 	width: 100%;
+	max-height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -31,8 +33,9 @@
 .headerLeft > svg {
 	width: 46px;
 	height: 46px;
-	padding: 18px 42px 18px 22px;
+	padding: 17px 42px 16px 22px;
 	border-right: 1px solid var(--grey-primary);
+	cursor: pointer;
 }
 
 .headerLeft-options {
@@ -47,6 +50,11 @@
 .headerLeft-options > a {
 	text-decoration: none;
 	padding: 18px 0px 15px 0;
+}
+
+.headerLeft-options > a:hover {
+	text-decoration: none;
+	background-color: var(--grey-primary);
 }
 
 .headerRight {
@@ -88,9 +96,29 @@
 	border-left: 1px solid var(--grey-primary);
 }
 
+.headerRight-profile:hover {
+	background-color: var(--grey-primary);
+}
+
+.headerRight-profile:hover > a {
+	text-decoration: none;
+}
+
 .otherItem {
 	padding: 18px 0 17px 0;
 	border-left: 1px solid var(--grey-primary);
 	border-right: 1px solid var(--grey-primary);
 	margin-right: 40px;
+}
+
+.otherItem:hover {
+	background-color: var(--grey-primary);
+}
+
+.otherItem > a {
+	text-decoration: none;
+}
+
+.otherItem > a:hover {
+	text-decoration: none;
 }

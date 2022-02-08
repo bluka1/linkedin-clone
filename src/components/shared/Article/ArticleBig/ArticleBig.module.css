@@ -18,18 +18,24 @@
 }
 
 .articleBig > img {
-	margin-bottom: 15px;
 	width: 100%;
+}
+
+.articleBig .picture {
+	margin-bottom: 15px;
 }
 
 .articleBig .title {
 	margin: 0 0 5px 0;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: 600;
+	color: var(--black-primary);
 }
 
 .articleBig .subtitle {
 	margin: 0;
 	font-size: 10px;
 	line-height: 15px;
+	font-weight: 400;
 }
