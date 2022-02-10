@@ -1,5 +1,3 @@
-import PlayIcon from '../../../../img/play.svg';
-
 import styles from './ArticleSmall.module.css';
 
 function ArticleSmall({ imageSrc, title, subtitle, articleType }) {
@@ -8,7 +6,7 @@ function ArticleSmall({ imageSrc, title, subtitle, articleType }) {
 			<div className={styles.picture}>
 				{articleType === 'video' && (
 					<span className={styles.hoverImg}>
-						<img src={PlayIcon} alt="play icon" />
+						<img src="images/play.svg" alt="play icon" />
 					</span>
 				)}
 				<img src={imageSrc} alt="course picture" />

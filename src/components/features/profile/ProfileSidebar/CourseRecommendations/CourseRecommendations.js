@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import PrototypingIcon from '../../../../../img/ux-proto.jpg';
-import AdobexdIcon from '../../../../../img/adobexd.jpg';
-import StylesIcon from '../../../../../img/ux-styles.jpg';
-
 import Article from '../../../../shared/Article/Article';
 import Card from '../../../../core/Card/Card';
 import styles from './CourseRecommendations.module.css';
@@ -13,21 +9,21 @@ function CourseRecommendations() {
 		<Card cardHeader="you may like these courses" background="secondary">
 			<div className={styles.courses}>
 				<Article
-					imageSrc={PrototypingIcon}
+					imageSrc="images/ux-proto.jpg"
 					title="UX Foundations: Prototyping"
 					subtitle="27959 viewers"
 					size="small"
 					articleType="video"
 				/>
 				<Article
-					imageSrc={AdobexdIcon}
+					imageSrc="images/adobexd.jpg"
 					title="Designing with Adobe XD and professional tools"
 					subtitle="9122 viewers"
 					size="small"
 					articleType="video"
 				/>
 				<Article
-					imageSrc={StylesIcon}
+					imageSrc="img/ux-styles.jpg"
 					title="UX Foundations: Styles and GUIs"
 					subtitle="13858 viewers"
 					size="small"

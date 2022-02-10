@@ -1,16 +1,16 @@
 import { NavLink } from 'react-router-dom';
 
-import MenuItem from '../MenuItem/MenuItem';
-import ProfileInfo from '../ProfileInfo/ProfileInfo';
+import MenuItem from './MenuItem/MenuItem';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
-import { ReactComponent as rssIcon } from '../../../../img/rss.svg';
-import { ReactComponent as usersIcon } from '../../../../img/users.svg';
-import { ReactComponent as briefcaseIcon } from '../../../../img/briefcase.svg';
-import { ReactComponent as msgIcon } from '../../../../img/msg.svg';
-import { ReactComponent as bellIcon } from '../../../../img/bell.svg';
-import { ReactComponent as SearchIcon } from '../../../../img/search.svg';
-import { ReactComponent as moreIcon } from '../../../../img/more.svg';
-import { ReactComponent as LogoIcon } from '../../../../img/blue-logo.svg';
+import { ReactComponent as rssIcon } from '../../../assets/icons/rss.svg';
+import { ReactComponent as usersIcon } from '../../../assets/icons/users.svg';
+import { ReactComponent as briefcaseIcon } from '../../../assets/icons/briefcase.svg';
+import { ReactComponent as msgIcon } from '../../../assets/icons/msg.svg';
+import { ReactComponent as bellIcon } from '../../../assets/icons/bell.svg';
+import { ReactComponent as SearchIcon } from '../../../assets/icons/search.svg';
+import { ReactComponent as moreIcon } from '../../../assets/icons/more.svg';
+import { ReactComponent as LogoIcon } from '../../../assets/icons/blue-logo.svg';
 import styles from './Header.module.css';
 
 function Header() {

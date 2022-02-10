@@ -1,4 +1,3 @@
-import school from '../../../../../img/school.jpg';
 import Avatar from '../../../../core/Avatar/Avatar';
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import styles from './Education.module.css';
@@ -8,7 +7,7 @@ function Education() {
 		<ProfileMainCard>
 			<h3 className={styles.educationHeader}>Education</h3>
 			<div className={styles.education}>
-				<Avatar imageSrc={school} size="xl" />
+				<Avatar imageSrc="images/school.jpg" size="xl" />
 				<div className={styles.educationDetails}>
 					<h5>Moscow State Linguistic University</h5>
 					<p className={styles.degree}>

@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import Article from '../../../../shared/Article/Article';
 
-import zara from '../../../../../img/zara.jpg';
-import scthon from '../../../../../img/scthon.jpg';
-import drozd from '../../../../../img/drozd.jpg';
 import styles from './Projects.module.css';
 
 function Projects() {
@@ -18,21 +15,21 @@ function Projects() {
 			<div className={styles.projects}>
 				<Article
 					size="big"
-					imageSrc={zara}
+					imageSrc="images/zara.jpg"
 					title="Zara redesign concept"
 					subtitle="UX/UI design, 15.07.2019"
 					articleType="project"
 				/>
 				<Article
 					size="big"
-					imageSrc={scthon}
+					imageSrc="images/scthon.jpg"
 					title="SCTHON event brand identity"
 					subtitle="Graphic design, 03.31.2019"
 					articleType="project"
 				/>
 				<Article
 					size="big"
-					imageSrc={drozd}
+					imageSrc="images/drozd.jpg"
 					title="Drozd. Brand identity. 2016"
 					subtitle="Graphic design, 03.04.2016"
 					articleType="project"

@@ -2,21 +2,33 @@ import { Link } from 'react-router-dom';
 
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import SkillInstance from './SkillInstance/SkillInstance';
-import person1 from '../../../../../img/person1.jpg';
-import person2 from '../../../../../img/person2.jpg';
-import person3 from '../../../../../img/person3.jpg';
-import person4 from '../../../../../img/person4.jpg';
-import person5 from '../../../../../img/person5.jpg';
-import person6 from '../../../../../img/person6.jpg';
-import person7 from '../../../../../img/person7.jpg';
-import person8 from '../../../../../img/person8.jpg';
-import person9 from '../../../../../img/person9.jpg';
 import styles from './Skills.module.css';
 
 function Skills() {
-	const uximages = [person1, person2, person3, person4, person5, person6];
-	const uiimages = [person3, person4, person5, person6, person7, person8, person9];
-	const brandimages = [person2, person3, person4, person5, person6];
+	const uximages = [
+		'images/person1.jpg',
+		'images/person2.jpg',
+		'images/person3.jpg',
+		'images/person4.jpg',
+		'images/person5.jpg',
+		'images/person6.jpg',
+	];
+	const uiimages = [
+		'images/person3.jpg',
+		'images/person4.jpg',
+		'images/person5.jpg',
+		'images/person6.jpg',
+		'images/person7.jpg',
+		'images/person8.jpg',
+		'images/person9.jpg',
+	];
+	const brandimages = [
+		'images/person2.jpg',
+		'images/person3.jpg',
+		'images/person4.jpg',
+		'images/person5.jpg',
+		'images/person6.jpg',
+	];
 
 	return (
 		<ProfileMainCard>

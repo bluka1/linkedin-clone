@@ -16,6 +16,10 @@
 	max-width: 240px;
 }
 
+.navbar > a:hover {
+	text-decoration: none;
+}
+
 .navbar > a:first-child {
 	border-top-right-radius: 4px;
 }
