@@ -6,7 +6,7 @@ function ProfileNavbar() {
 	return (
 		<div className={styles.navbarContainer}>
 			<div className={styles.navbar}>
-				<NavLink to="/profile" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+				<NavLink to="/profile/general" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
 					profile
 				</NavLink>
 				<NavLink

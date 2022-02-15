@@ -42,7 +42,7 @@ function Header() {
 					<input type="text" placeholder="Search" />
 				</div>
 				<div className={styles['headerRight-profile']}>
-					<NavLink to="/profile">
+					<NavLink to="/profile/general">
 						<ProfileInfo />
 					</NavLink>
 				</div>

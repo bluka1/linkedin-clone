@@ -8,7 +8,7 @@ function Experience() {
 			<h3>Experience</h3>
 			<div className={styles.experiences}>
 				<div className={styles.experience}>
-					<Avatar imageSrc="images/freelance.jpg" size="xl" />
+					<Avatar imageSrc="/images/freelance.jpg" size="xl" />
 					<div className={styles.experienceInfo}>
 						<h5>Freelance UX/UI designer</h5>
 						<p>
@@ -26,7 +26,7 @@ function Experience() {
 					</div>
 				</div>
 				<div className={styles.experience}>
-					<Avatar imageSrc="images/upwork.jpg" size="xl" />
+					<Avatar imageSrc="/images/upwork.jpg" size="xl" />
 					<div className={styles.experienceInfo}>
 						<h5>UX/UI designer</h5>
 						<p>

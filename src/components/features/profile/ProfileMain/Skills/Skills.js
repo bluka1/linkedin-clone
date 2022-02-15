@@ -1,33 +1,39 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import SkillInstance from './SkillInstance/SkillInstance';
 import styles from './Skills.module.css';
 
 function Skills() {
+	const [shown, setShown] = useState(false);
+
+	const shownHandler = () => {
+		setShown((prevState) => !prevState);
+	};
+
 	const uximages = [
-		'images/person1.jpg',
-		'images/person2.jpg',
-		'images/person3.jpg',
-		'images/person4.jpg',
-		'images/person5.jpg',
-		'images/person6.jpg',
+		'/images/person1.jpg',
+		'/images/person2.jpg',
+		'/images/person3.jpg',
+		'/images/person4.jpg',
+		'/images/person5.jpg',
+		'/images/person6.jpg',
 	];
 	const uiimages = [
-		'images/person3.jpg',
-		'images/person4.jpg',
-		'images/person5.jpg',
-		'images/person6.jpg',
-		'images/person7.jpg',
-		'images/person8.jpg',
-		'images/person9.jpg',
+		'/images/person3.jpg',
+		'/images/person4.jpg',
+		'/images/person5.jpg',
+		'/images/person6.jpg',
+		'/images/person7.jpg',
+		'/images/person8.jpg',
+		'/images/person9.jpg',
 	];
 	const brandimages = [
-		'images/person2.jpg',
-		'images/person3.jpg',
-		'images/person4.jpg',
-		'images/person5.jpg',
-		'images/person6.jpg',
+		'/images/person2.jpg',
+		'/images/person3.jpg',
+		'/images/person4.jpg',
+		'/images/person5.jpg',
+		'/images/person6.jpg',
 	];
 
 	return (
@@ -38,7 +44,35 @@ function Skills() {
 				<SkillInstance title="User interface (UI)" images={uiimages} />
 				<SkillInstance title="Brand identity" images={brandimages} />
 			</div>
-			<Link to="/notimplemented">SHOW ALL (17)</Link>
+			{shown && (
+				<>
+					<div className={styles.skills}>
+						<SkillInstance title="User experience (UX)" images={uximages} />
+						<SkillInstance title="User interface (UI)" images={uiimages} />
+						<SkillInstance title="Brand identity" images={brandimages} />
+					</div>
+					<div className={styles.skills}>
+						<SkillInstance title="User experience (UX)" images={uximages} />
+						<SkillInstance title="User interface (UI)" images={uiimages} />
+						<SkillInstance title="Brand identity" images={brandimages} />
+					</div>
+					<div className={styles.skills}>
+						<SkillInstance title="User experience (UX)" images={uximages} />
+						<SkillInstance title="User interface (UI)" images={uiimages} />
+						<SkillInstance title="Brand identity" images={brandimages} />
+					</div>
+					<div className={styles.skills}>
+						<SkillInstance title="User experience (UX)" images={uximages} />
+						<SkillInstance title="User interface (UI)" images={uiimages} />
+						<SkillInstance title="Brand identity" images={brandimages} />
+					</div>
+					<div className={styles.skills}>
+						<SkillInstance title="User experience (UX)" images={uximages} />
+						<SkillInstance title="User interface (UI)" images={uiimages} />
+					</div>
+				</>
+			)}
+			<button onClick={shownHandler}>Show all (17)</button>
 		</ProfileMainCard>
 	);
 }

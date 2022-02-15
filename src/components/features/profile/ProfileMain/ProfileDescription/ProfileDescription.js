@@ -7,7 +7,6 @@ import { ReactComponent as NavigationIcon } from '../../../../../assets/icons/na
 import { ReactComponent as EditIcon } from '../../../../../assets/icons/edit.svg';
 import more from '../../../../../assets/icons/more-horizontal.svg';
 import upload from '../../../../../assets/icons/upload.svg';
-
 import styles from './ProfileDescription.module.css';
 
 function ProfileDescription() {
@@ -26,11 +25,11 @@ function ProfileDescription() {
 						</div>
 					</div>
 				</div>
-				<img src="images/profilebg.jpg" alt="profile background" />
+				<img src="/images/profilebg.jpg" alt="profile background" />
 			</div>
 			<div className={styles.profileDetails}>
 				<div className={styles.avatar}>
-					<Avatar imageSrc="images/profilepict.jpg" size="xxxl" />
+					<Avatar imageSrc="/images/profilepict.jpg" size="xxxl" />
 				</div>
 				<div className={styles.details}>
 					<div className={styles.personalInfo}>

@@ -9,21 +9,21 @@ function CourseRecommendations() {
 		<Card cardHeader="you may like these courses" background="secondary">
 			<div className={styles.courses}>
 				<Article
-					imageSrc="images/ux-proto.jpg"
+					imageSrc="/images/ux-proto.jpg"
 					title="UX Foundations: Prototyping"
 					subtitle="27959 viewers"
 					size="small"
 					articleType="video"
 				/>
 				<Article
-					imageSrc="images/adobexd.jpg"
+					imageSrc="/images/adobexd.jpg"
 					title="Designing with Adobe XD and professional tools"
 					subtitle="9122 viewers"
 					size="small"
 					articleType="video"
 				/>
 				<Article
-					imageSrc="img/ux-styles.jpg"
+					imageSrc="/images/ux-styles.jpg"
 					title="UX Foundations: Styles and GUIs"
 					subtitle="13858 viewers"
 					size="small"

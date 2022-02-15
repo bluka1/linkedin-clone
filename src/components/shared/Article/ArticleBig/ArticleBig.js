@@ -1,4 +1,5 @@
 import styles from './ArticleBig.module.css';
+import play from '../../../../assets/icons/play.svg';
 
 function ArticleBig({ imageSrc, title, subtitle, articleType }) {
 	return (
@@ -6,7 +7,7 @@ function ArticleBig({ imageSrc, title, subtitle, articleType }) {
 			<div className={styles.picture}>
 				{articleType === 'video' && (
 					<span className={styles.hoverImg}>
-						<img src="images/play.svg" alt="play icon" />
+						<img src={play} alt="play icon" />
 					</span>
 				)}
 				<img src={imageSrc} alt="project or article picture" />

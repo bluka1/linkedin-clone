@@ -7,7 +7,7 @@ function Education() {
 		<ProfileMainCard>
 			<h3 className={styles.educationHeader}>Education</h3>
 			<div className={styles.education}>
-				<Avatar imageSrc="images/school.jpg" size="xl" />
+				<Avatar imageSrc="/images/school.jpg" size="xl" />
 				<div className={styles.educationDetails}>
 					<h5>Moscow State Linguistic University</h5>
 					<p className={styles.degree}>

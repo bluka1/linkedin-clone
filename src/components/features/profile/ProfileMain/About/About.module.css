@@ -7,7 +7,7 @@ p.description {
 	margin: 0 0 20px 0;
 }
 
-a {
+button {
 	color: var(--blue-primary);
 	text-decoration: none;
 }

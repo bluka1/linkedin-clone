@@ -3,6 +3,7 @@
 	grid-template-rows: 180px 180px;
 	background-color: var(--white-primary);
 	border-radius: 4px;
+	max-height: 360px;
 }
 
 .profileBg {
