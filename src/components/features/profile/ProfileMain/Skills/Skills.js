@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ExpandButton from '../../../../core/ExpandButton/ExpandButton';
 
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import SkillInstance from './SkillInstance/SkillInstance';
@@ -72,7 +73,7 @@ function Skills() {
 					</div>
 				</>
 			)}
-			<button onClick={shownHandler}>Show all (17)</button>
+			<ExpandButton text="Show all (17)" onClick={shownHandler} />
 		</ProfileMainCard>
 	);
 }

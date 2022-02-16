@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import ExpandButton from '../../../../core/ExpandButton/ExpandButton';
 import ProfileMainCard from '../ProfileMainCard/ProfileMainCard';
 import styles from './About.module.css';
 
@@ -19,17 +19,17 @@ function About() {
 			</p>
 			{shown && (
 				<>
-					<p>
+					<p className={styles.description}>
 						I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative
 						projects, such as landing pages or unusual corporate websites.
 					</p>
-					<p>
+					<p className={styles.description}>
 						I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative
 						projects, such as landing pages or unusual corporate websites.
 					</p>
 				</>
 			)}
-			<button onClick={shownHandler}>See more</button>
+			<ExpandButton text="See more" onClick={shownHandler} />
 		</ProfileMainCard>
 	);
 }

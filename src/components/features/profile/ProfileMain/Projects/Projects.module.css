@@ -17,8 +17,3 @@ h3 {
 	gap: 20px;
 	margin: 0 0 25px 0;
 }
-
-a {
-	color: var(--blue-primary);
-	text-decoration: none;
-}

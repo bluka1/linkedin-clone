@@ -1,0 +1,17 @@
+.expandButton {
+	font-family: 'Montserrat', sans-serif;
+	outline: none;
+	border: none;
+	background: transparent;
+	color: var(--blue-primary);
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+
+.expandButton:hover {
+	text-decoration: underline;
+}
