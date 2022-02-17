@@ -16,40 +16,42 @@ import styles from './Header.module.css';
 function Header() {
 	return (
 		<div className={styles.header}>
-			<div className={styles.headerLeft}>
-				<LogoIcon />
-				<div className={styles['headerLeft-options']}>
-					<NavLink to="/" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-						<MenuItem Icon={rssIcon} text="feed" />
-					</NavLink>
-					<NavLink to="/network" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-						<MenuItem Icon={usersIcon} text="network" />
-					</NavLink>
-					<NavLink to="/jobs" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-						<MenuItem Icon={briefcaseIcon} text="jobs" />
-					</NavLink>
-					<NavLink to="/chat" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-						<MenuItem Icon={msgIcon} text="chat" />
-					</NavLink>
-					<NavLink to="/notices" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-						<MenuItem Icon={bellIcon} text="notices" />
-					</NavLink>
+			<div className={styles.headerContent}>
+				<div className={styles.headerLeft}>
+					<LogoIcon />
+					<div className={styles['headerLeft-options']}>
+						<NavLink to="/" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+							<MenuItem Icon={rssIcon} text="feed" />
+						</NavLink>
+						<NavLink to="/network" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+							<MenuItem Icon={usersIcon} text="network" />
+						</NavLink>
+						<NavLink to="/jobs" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+							<MenuItem Icon={briefcaseIcon} text="jobs" />
+						</NavLink>
+						<NavLink to="/chat" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+							<MenuItem Icon={msgIcon} text="chat" />
+						</NavLink>
+						<NavLink to="/notices" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+							<MenuItem Icon={bellIcon} text="notices" />
+						</NavLink>
+					</div>
 				</div>
-			</div>
-			<div className={styles.headerRight}>
-				<div className={styles.search}>
-					<SearchIcon />
-					<input type="text" placeholder="Search" />
-				</div>
-				<div className={styles['headerRight-profile']}>
-					<NavLink to="/profile">
-						<ProfileInfo />
-					</NavLink>
-				</div>
-				<div className={styles.otherItem}>
-					<NavLink to="/notimplemented" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-						<MenuItem Icon={moreIcon} text="other" />
-					</NavLink>
+				<div className={styles.headerRight}>
+					<div className={styles.search}>
+						<SearchIcon />
+						<input type="text" placeholder="Search" />
+					</div>
+					<div className={styles['headerRight-profile']}>
+						<NavLink to="/profile">
+							<ProfileInfo />
+						</NavLink>
+					</div>
+					<div className={styles.otherItem}>
+						<NavLink to="/notimplemented" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+							<MenuItem Icon={moreIcon} text="other" />
+						</NavLink>
+					</div>
 				</div>
 			</div>
 		</div>

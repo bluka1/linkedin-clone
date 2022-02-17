@@ -19,23 +19,21 @@ function App() {
 			<Router>
 				<Header />
 				<div className="content">
-					<div className="main">
-						<Routes>
-							<Route path="/" element={<Feed />} />
-							<Route path="/network" element={<Network />} />
-							<Route path="/jobs" element={<Jobs />} />
-							<Route path="/chat" element={<Chat />} />
-							<Route path="/notices" element={<Notices />} />
-							<Route path="profile/*" element={<Profile />}>
-								<Route index element={<General />} />
-								<Route path="articles" element={<Articles />} />
-								<Route path="activity" element={<Activity />} />
-							</Route>
-							<Route path="/notimplemented" element={<NotImplemented />} />
-						</Routes>
-					</div>
-					<Footer />
+					<Routes>
+						<Route path="/" element={<Feed />} />
+						<Route path="/network" element={<Network />} />
+						<Route path="/jobs" element={<Jobs />} />
+						<Route path="/chat" element={<Chat />} />
+						<Route path="/notices" element={<Notices />} />
+						<Route path="profile/*" element={<Profile />}>
+							<Route index element={<General />} />
+							<Route path="articles" element={<Articles />} />
+							<Route path="activity" element={<Activity />} />
+						</Route>
+						<Route path="/notimplemented" element={<NotImplemented />} />
+					</Routes>
 				</div>
+				<Footer />
 			</Router>
 		</div>
 	);
