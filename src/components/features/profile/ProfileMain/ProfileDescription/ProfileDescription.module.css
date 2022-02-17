@@ -67,6 +67,7 @@
 	font-size: 12px;
 	line-height: 12px;
 	color: var(--black-primary);
+	cursor: pointer;
 }
 
 .more {

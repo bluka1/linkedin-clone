@@ -31,11 +31,13 @@ body {
 }
 
 .content {
-	margin-top: 80px;
+	margin: 80px auto 0 auto;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 100%;
+	max-width: 1440px;
 }
 
 .main {
@@ -44,4 +46,10 @@ body {
 	width: 100%;
 	max-width: 1180px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 1460px) {
+	.main {
+		padding: 40px 30px;
+	}
 }

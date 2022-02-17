@@ -9,6 +9,9 @@ import Notices from './components/features/notices/Notices/Notices';
 import NotImplemented from './components/features/NotImplemented/NotImplemented';
 import Footer from './components/features/footer/Footer';
 import Profile from './components/features/profile/Profile';
+import General from './components/features/profile/ProfileMain/General';
+import Articles from './components/features/profile/ProfileMain/Articles';
+import Activity from './components/features/profile/ProfileMain/Activity';
 
 function App() {
 	return (
@@ -23,10 +26,10 @@ function App() {
 							<Route path="/jobs" element={<Jobs />} />
 							<Route path="/chat" element={<Chat />} />
 							<Route path="/notices" element={<Notices />} />
-							<Route path="profile" element={<Profile />}>
-								<Route path="general" element={<Profile />} />
-								<Route path="articles" element={<Profile />} />
-								<Route path="activityandinterests" element={<Profile />} />
+							<Route path="profile/*" element={<Profile />}>
+								<Route index element={<General />} />
+								<Route path="articles" element={<Articles />} />
+								<Route path="activity" element={<Activity />} />
 							</Route>
 							<Route path="/notimplemented" element={<NotImplemented />} />
 						</Routes>

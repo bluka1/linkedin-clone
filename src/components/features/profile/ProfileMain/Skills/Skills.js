@@ -73,7 +73,7 @@ function Skills() {
 					</div>
 				</>
 			)}
-			<ExpandButton text="Show all (17)" onClick={shownHandler} />
+			<ExpandButton onClick={shownHandler}>{shown ? 'Show less' : 'Show all (17)'}</ExpandButton>
 		</ProfileMainCard>
 	);
 }

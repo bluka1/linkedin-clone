@@ -1,11 +1,5 @@
 import styles from './ExpandButton.module.css';
 
-function ExpandButton(props) {
-	return (
-		<button className={styles.expandButton} onClick={props.onClick}>
-			{props.text}
-		</button>
-	);
-}
+const ExpandButton = (props) => <button className={styles.expandButton} {...props} />;
 
 export default ExpandButton;

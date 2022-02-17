@@ -29,7 +29,7 @@ function About() {
 					</p>
 				</>
 			)}
-			<ExpandButton text="See more" onClick={shownHandler} />
+			<ExpandButton onClick={shownHandler}>{shown ? 'See less' : 'See more'}</ExpandButton>
 		</ProfileMainCard>
 	);
 }

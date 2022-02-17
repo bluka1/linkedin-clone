@@ -110,8 +110,7 @@ function Projects() {
 					</>
 				)}
 			</div>
-
-			<ExpandButton text="Show all (12)" onClick={shownHandler} />
+			<ExpandButton onClick={shownHandler}>{shown ? 'Show less' : 'Show all (12)'}</ExpandButton>
 		</ProfileMainCard>
 	);
 }

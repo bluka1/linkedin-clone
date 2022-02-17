@@ -1,21 +1,24 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import styles from './ProfileNavbar.module.css';
 
 function ProfileNavbar() {
+	const location = useLocation();
+	console.log(location.pathname);
+
 	return (
 		<div className={styles.navbarContainer}>
 			<div className={styles.navbar}>
-				<NavLink to="/profile/general" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+				<NavLink
+					to="/profile"
+					className={({ isActive }) => (location.pathname === '/profile' && isActive ? styles.active : styles.inactive)}
+				>
 					profile
 				</NavLink>
-				<NavLink
-					to="/profile/activityandinterests"
-					className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
-				>
+				<NavLink to="activity" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
 					activity & interests
 				</NavLink>
-				<NavLink to="/profile/articles" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+				<NavLink to="articles" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
 					articles (3)
 				</NavLink>
 			</div>
