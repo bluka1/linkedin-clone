@@ -1,0 +1,40 @@
+.sectionSeparator {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.sectionSeparator > span {
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.sectionSeparator > span:before,
+.sectionSeparator > span:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 9999px;
+	height: 1px;
+	background: var(--grey-senary);
+}
+
+.sectionSeparator > span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+.sectionSeparator > span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+.sectionSeparatorContent {
+	display: flex;
+	flex-direction: row;
+}
