@@ -1,7 +1,12 @@
 import styles from './FeedMain.module.css';
+import NewPost from './NewPost/NewPost';
 
 function FeedMain() {
-	return <h1 className={styles.feedMain}>Hello I am feed main.</h1>;
+	return (
+		<div className={styles.feedMain}>
+			<NewPost />
+		</div>
+	);
 }
 
 export default FeedMain;

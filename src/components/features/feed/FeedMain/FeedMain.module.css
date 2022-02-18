@@ -1,3 +1,6 @@
 .feedMain {
+	display: flex;
+	flex-direction: column;
 	background-color: lightblue;
+	gap: 20px;
 }

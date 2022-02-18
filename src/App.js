@@ -2,11 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Chat from './components/features/chat/Chat/Chat';
 import Feed from './components/features/feed/Feed';
-<<<<<<< HEAD
-import Header from './components/features/header/Header/Header';
-=======
 import Header from './components/features/header/Header';
->>>>>>> main
 import Jobs from './components/features/jobs/Jobs/Jobs';
 import Network from './components/features/network/Network/Network';
 import Notices from './components/features/notices/Notices/Notices';
