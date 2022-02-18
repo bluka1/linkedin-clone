@@ -2,13 +2,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Chat from './components/features/chat/Chat/Chat';
 import Feed from './components/features/feed/Feed';
+<<<<<<< HEAD
 import Header from './components/features/header/Header/Header';
+=======
+import Header from './components/features/header/Header';
+>>>>>>> main
 import Jobs from './components/features/jobs/Jobs/Jobs';
 import Network from './components/features/network/Network/Network';
 import Notices from './components/features/notices/Notices/Notices';
 import NotImplemented from './components/features/NotImplemented/NotImplemented';
-import Footer from './components/features/footer/Footer/Footer';
+import Footer from './components/features/footer/Footer';
 import Profile from './components/features/profile/Profile';
+import General from './components/features/profile/ProfileMain/General';
+import Articles from './components/features/profile/ProfileMain/Articles';
+import Activity from './components/features/profile/ProfileMain/Activity';
 
 function App() {
 	return (
@@ -16,19 +23,21 @@ function App() {
 			<Router>
 				<Header />
 				<div className="content">
-					<div className="main">
-						<Routes>
-							<Route path="/" element={<Feed />} />
-							<Route path="/network" element={<Network />} />
-							<Route path="/jobs" element={<Jobs />} />
-							<Route path="/chat" element={<Chat />} />
-							<Route path="/notices" element={<Notices />} />
-							<Route path="/profile" element={<Profile />} />
-							<Route path="/notimplemented" element={<NotImplemented />} />
-						</Routes>
-					</div>
-					<Footer />
+					<Routes>
+						<Route path="/" element={<Feed />} />
+						<Route path="/network" element={<Network />} />
+						<Route path="/jobs" element={<Jobs />} />
+						<Route path="/chat" element={<Chat />} />
+						<Route path="/notices" element={<Notices />} />
+						<Route path="profile/*" element={<Profile />}>
+							<Route index element={<General />} />
+							<Route path="articles" element={<Articles />} />
+							<Route path="activity" element={<Activity />} />
+						</Route>
+						<Route path="/notimplemented" element={<NotImplemented />} />
+					</Routes>
 				</div>
+				<Footer />
 			</Router>
 		</div>
 	);

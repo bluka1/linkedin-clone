@@ -1,9 +1,15 @@
+import { Outlet } from 'react-router-dom';
+
+import ProfileDescription from './ProfileDescription/ProfileDescription';
+import ProfileNavbar from './ProfileNavbar/ProfileNavbar';
 import styles from './ProfileMain.module.css';
 
 function ProfileMain() {
 	return (
 		<div className={styles.profileMain}>
-			<h3>I am main</h3>
+			<ProfileDescription />
+			<ProfileNavbar />
+			<Outlet />
 		</div>
 	);
 }

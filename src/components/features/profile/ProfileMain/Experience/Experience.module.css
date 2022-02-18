@@ -1,0 +1,46 @@
+.experiences {
+	display: grid;
+	gap: 20px;
+	color: var(--black-primary);
+}
+
+.experience {
+	display: flex;
+	gap: 16px;
+}
+
+.experience:nth-child(1) {
+	padding-bottom: 25px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.experienceInfo > h5 {
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0 0 10px 0;
+	font-weight: 700;
+}
+
+.experienceInfo > p {
+	font-size: 10px;
+	line-height: 15px;
+	margin: 0;
+}
+
+p.periodPart {
+	margin-top: 5px;
+}
+
+.period {
+	color: var(--blue-primary);
+	font-weight: 700;
+}
+
+span.greyish {
+	color: var(--black-primary);
+	font-weight: 400;
+}
+
+p.description {
+	margin: 10px 0 0 0;
+}

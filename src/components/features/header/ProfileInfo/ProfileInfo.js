@@ -1,15 +1,14 @@
-import { Avatar } from '@material-ui/core';
-
-import { ReactComponent as ArrowIcon } from '../../../../img/arrow.svg';
+import Avatar from '../../../core/Avatar/Avatar';
+import { ReactComponent as ArrowIcon } from '../../../../assets/icons/arrow.svg';
 import styles from './ProfileInfo.module.css';
 
 function ProfileInfo() {
 	return (
 		<div className={styles.profile}>
-			<Avatar />
+			<Avatar imageSrc="/images/dmitry-a.jpg" size="s" />
 			<div className={styles.profileInformation}>
 				<div>
-					<span className={styles.profileName}>Luka Batarelo</span>
+					<span className={styles.profileName}>D. Kargaev</span>
 					<span className={styles.profileDescription}>&emsp;you</span>
 				</div>
 				<div className={styles.profileViewsAndGrowth}>

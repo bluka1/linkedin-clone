@@ -1,0 +1,29 @@
+.educationHeader {
+	margin: 0 0 25px 0;
+}
+
+.education {
+	display: flex;
+	gap: 16px;
+}
+
+.educationDetails > h5 {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 600;
+	margin: 0 0 10px 0;
+}
+
+.educationDetails > p {
+	font-size: 10px;
+	line-height: 15px;
+	margin: 0;
+}
+
+.educationDetails > p.degree {
+	margin-bottom: 5px;
+}
+
+.educationDetails .period {
+	margin-bottom: 10px;
+}

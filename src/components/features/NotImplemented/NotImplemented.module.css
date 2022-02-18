@@ -1,6 +1,6 @@
 .notImplemented {
-	height: calc(100vh - 311px);
-	overflow-y: scroll;
+	height: calc(100vh - 387px);
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

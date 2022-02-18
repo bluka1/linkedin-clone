@@ -1,5 +1,6 @@
 .card {
 	padding: 25px 30px;
+	border-radius: 4px;
 }
 
 .card.primary {
