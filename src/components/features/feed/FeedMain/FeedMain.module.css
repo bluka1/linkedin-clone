@@ -1,7 +1,7 @@
 .feedMain {
 	display: flex;
 	flex-direction: column;
-	background-color: lightblue;
+	background-color: transparent;
 	gap: 20px;
 }
 
@@ -14,4 +14,10 @@
 	font-weight: 700;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+.attachments {
+	display: grid;
+	gap: 10px;
+	width: 100%;
 }

@@ -1,11 +1,7 @@
 import styles from './Post.module.css';
 
-function Post() {
-	return (
-		<div className={styles.post}>
-			<h1>I am post</h1>
-		</div>
-	);
+function Post(props) {
+	return <div className={styles.post}>{props.children}</div>;
 }
 
 export default Post;
