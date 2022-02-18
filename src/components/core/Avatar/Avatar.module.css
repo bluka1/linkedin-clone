@@ -1,5 +1,5 @@
-.avatar {
-	border-radius: 50%;
+.avatar > img {
+	border-radius: 999px;
 }
 
 .avatar.xxs {

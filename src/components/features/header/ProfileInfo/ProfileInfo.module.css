@@ -1,22 +1,20 @@
 .profile {
 	display: flex;
 	align-items: center;
-	padding: 22px 30px;
+	padding: 19px 30px 18px 30px;
 }
 
 .profileInformation {
 	padding: 0 15px;
-}
-
-.profileInfo > svg {
-	width: 42px;
+	display: grid;
+	gap: 10px;
 }
 
 .profileName {
 	text-transform: uppercase;
 	font-size: 12px;
-	font-weight: 900;
-	line-height: 20px;
+	line-height: 12px;
+	font-weight: 600;
 }
 
 .profileDescription {
@@ -28,20 +26,19 @@
 
 .profileViewsAndGrowth {
 	display: flex;
-	line-height: 20px;
+	line-height: 12px;
 }
 
 .profileViews {
 	color: var(--grey-secondary);
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Gotham Pro', sans-serif;
-	font-style: normal;
 }
 
 .profileGrowth {
 	color: var(--green-primary);
 	font-size: 12px;
+	font-weight: 500;
 	display: flex;
 	align-items: center;
 }

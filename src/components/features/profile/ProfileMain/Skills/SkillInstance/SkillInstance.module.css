@@ -1,0 +1,46 @@
+.skillCard {
+	display: grid;
+	gap: 5px;
+	border: 1px solid var(--grey-primary);
+	border-radius: 6px;
+	padding: 14px 20px 16px 20px;
+}
+
+h5 {
+	margin: 0 0 5px 0;
+}
+
+p {
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.number {
+	font-size: 14px;
+	line-height: 21px;
+	color: var(--blue-primary);
+}
+
+.images {
+	display: flex;
+}
+
+.images > * {
+	margin-right: -10px;
+}
+
+.endorsementsNumber {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 26px;
+	width: 24px;
+	height: 24px;
+	font-size: 10px;
+	background-color: var(--blue-primary);
+	color: var(--white-primary);
+}

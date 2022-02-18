@@ -6,10 +6,13 @@
 	--grey-tertiary: #cecece;
 	--grey-quaternary: #f7f9fb;
 	--grey-quinary: #e5e5e5;
-	--grey-senary: #e9f0f8;
+	--grey-senary: #e7e7e7;
+	--grey-septenary: #e9f0f8;
 	--green-primary: #02b033;
 	--black-primary: #181818;
 	--blue-primary: #0275b1;
+	--blue-secondary: #0077b5;
+	--blue-tertirary: #0e6795;
 	--white-primary: #ffffff;
 	--white-secondary: #fcfdfd;
 }
@@ -18,6 +21,7 @@ body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	background-color: var(--grey-septenary);
 }
 
 .app {
@@ -27,15 +31,19 @@ body {
 }
 
 .content {
-	margin-top: 86px;
+	min-height: calc(100vh - 387px);
+	margin: 80px auto 0 auto;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 100%;
+	max-width: 1180px;
+	padding: 40px 130px;
 }
 
-.main {
-	min-height: calc(100vh - 391px);
-	padding: 40px 130px;
-	background-color: var(--grey-quinary);
+@media screen and (max-width: 1439px) {
+	.content {
+		padding: 40px 30px;
+	}
 }

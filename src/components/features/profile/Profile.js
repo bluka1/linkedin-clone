@@ -1,5 +1,6 @@
 import ProfileMain from './ProfileMain/ProfileMain';
 import ProfileSidebar from './ProfileSidebar/ProfileSidebar';
+
 import styles from './Profile.module.css';
 
 function Profile() {
