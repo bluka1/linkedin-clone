@@ -69,7 +69,7 @@ function FeedMain() {
 					<p>How’s your day going, guys?</p>
 					<img src="/images/notebook.jpg" alt="post image" />
 				</PostBody>
-				<PostFooter likes={12} comments={3} />
+				<PostFooter likesFilled likes={12} comments={3} />
 			</Post>
 			<Post>
 				<PostHeader>
@@ -82,7 +82,7 @@ function FeedMain() {
 						<Attachment Icon={FileIcon} title="iOS 11 guidelines for developers" subtitle="PDF file, 245 kb" />
 					</div>
 				</PostBody>
-				<PostFooter likes={89} comments={7} />
+				<PostFooter likesFilled likes={89} commentsFilled comments={7} />
 			</Post>
 			<Post>
 				<PostHeader>
