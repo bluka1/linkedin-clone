@@ -4,3 +4,7 @@
 	gap: 10px;
 	margin-bottom: 25px;
 }
+
+.myGroups > *:hover {
+	opacity: 0.7;
+}

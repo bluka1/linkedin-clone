@@ -21,7 +21,7 @@
 .profileCard .user > img {
 	width: 100px;
 	height: 100px;
-	border-radius: 999px;
+	border-radius: 50%;
 }
 
 .profileCard .user .userName {

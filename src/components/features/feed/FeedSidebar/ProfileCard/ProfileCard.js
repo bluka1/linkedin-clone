@@ -1,6 +1,5 @@
 import { ReactComponent as LogoIcon } from '../../../../../assets/icons/gold-logo.svg';
 
-import Avatar from '../../../../core/Avatar/Avatar';
 import styles from './ProfileCard.module.css';
 
 function ProfileCard() {
@@ -8,7 +7,7 @@ function ProfileCard() {
 		<div className={styles.profileCard}>
 			<img src="/images/bg.jpg" alt="background" />
 			<div className={styles.user}>
-				<img src="/images/dmitry-b.jpg" alt="profile picture" />
+				<img src="/images/profilepict.jpg" alt="profile picture" />
 				<div className={styles.userName}>
 					<h3>Dmitry Kargaev</h3>
 					<LogoIcon />
