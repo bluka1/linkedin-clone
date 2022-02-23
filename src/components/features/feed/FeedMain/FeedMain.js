@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ReactComponent as FileIcon } from '../../../../assets/icons/filetext.svg';
 import ExpandButton from '../../../core/ExpandButton/ExpandButton';
+import Select from '../../../core/Select/Select';
 import Attachment from '../../../shared/Attachment/Attachment';
 import SectionSeparator from '../../../shared/SectionSeparator/SectionSeparator';
 import styles from './FeedMain.module.css';
@@ -21,11 +22,15 @@ function FeedMain() {
 		<div className={styles.feedMain}>
 			<NewPost />
 			<SectionSeparator>
-				sort by:
-				<select className={styles.separatorSelect}>
-					<option>Trending</option>
-					<option>Date</option>
-				</select>
+				<p>sort by: </p>
+				<Select
+					selectOptions={[
+						{ value: 'TRENDING', label: 'TRENDING' },
+						{ value: 'DATE', label: 'DATE' },
+					]}
+					defaultValue={{ value: 'TRENDING', label: 'TRENDING' }}
+					styles="separatorStyles"
+				/>
 			</SectionSeparator>
 			<Post>
 				<PostHeader>

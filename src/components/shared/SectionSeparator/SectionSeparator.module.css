@@ -1,40 +1,38 @@
 .sectionSeparator {
 	display: block;
+	position: relative;
 	text-align: center;
-	overflow: hidden;
 	white-space: nowrap;
 }
 
-.sectionSeparator > span {
-	position: relative;
-	display: inline-block;
-	font-size: 12px;
-	line-height: 12px;
-	font-weight: 700;
+.sectionSeparator .sectionSeparatorContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-transform: uppercase;
+	width: 100%;
 }
 
-.sectionSeparator > span:before,
-.sectionSeparator > span:after {
+.sectionSeparatorContent::before,
+.sectionSeparatorContent::after {
 	content: '';
-	position: absolute;
-	top: 50%;
-	width: 9999px;
+	width: 40%;
 	height: 1px;
 	background: var(--grey-senary);
 }
 
-.sectionSeparator > span:before {
-	right: 100%;
-	margin-right: 15px;
+.sectionSeparatorContent > * {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 700;
+	margin: 0;
 }
 
-.sectionSeparator > span:after {
-	left: 100%;
-	margin-left: 15px;
+.sectionSeparatorContent > a {
+	text-decoration: none;
+	color: var(--blue-primary);
 }
 
-.sectionSeparatorContent {
-	display: flex;
-	flex-direction: row;
+.sectionSeparatorContent > a:hover {
+	text-decoration: underline;
 }
