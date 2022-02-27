@@ -9,7 +9,7 @@ function NewPost() {
 		<div className={styles.newPost}>
 			<h5>New post</h5>
 			<div className={styles.newPostBody}>
-				<input type="text" placeholder="What’s on your mind?" />
+				<textarea type="text" placeholder="What’s on your mind?" />
 				<div className={styles.icons}>
 					<PaperclipIcon />
 					<ImageIcon />

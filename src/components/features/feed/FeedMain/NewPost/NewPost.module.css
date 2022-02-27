@@ -20,18 +20,31 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
+	max-height: 180px;
 }
 
-.newPostBody > input {
+.newPostBody > textarea {
 	outline: none;
 	border: none;
-	padding: 0;
+	padding: 0 10px 0 0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	flex: 1;
+	word-wrap: wrap;
+	resize: none;
+	overflow: auto;
+	max-height: 100px;
 }
 
-.newPostBody > input::placeholder {
+.newPostBody > textarea:focus {
+	height: 100px;
+}
+
+.newPostBody > textarea::-webkit-scrollbar {
+	display: none;
+}
+
+.newPostBody > textarea::placeholder {
 	font-size: 18px;
 	color: var(--black-primary);
 	opacity: 0.2;
@@ -48,4 +61,15 @@
 	padding: 8px;
 	margin-left: 5px;
 	border-radius: 4px;
+}
+
+.newPostBody .icons > svg:hover {
+	cursor: pointer;
+	background-color: var(--grey-septenary);
+	border-radius: 4px;
+}
+
+.newPostBody .icons > svg:last-child:hover {
+	cursor: pointer;
+	opacity: 0.7;
 }
