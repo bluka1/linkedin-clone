@@ -1,0 +1,10 @@
+.hashtags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 5px;
+}
+
+.hashtags *:hover {
+	opacity: 0.7;
+}

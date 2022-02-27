@@ -1,8 +1,9 @@
 .tag {
 	padding: 7px 12px;
-	background-color: var(--grey-senary);
+	background-color: var(--grey-septenary);
 	border-radius: 4px;
 	font-size: 12px;
 	line-height: 18px;
 	color: var(--black-primary);
+	cursor: pointer;
 }
