@@ -1,3 +1,23 @@
 .feedMain {
-	background-color: lightblue;
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+	gap: 20px;
+}
+
+.separatorSelect {
+	outline: none;
+	border: none;
+	background: transparent;
+	color: var(--blue-primary);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.attachments {
+	display: grid;
+	gap: 10px;
+	width: 100%;
 }

@@ -5,7 +5,7 @@ import styles from './ProfileInfo.module.css';
 function ProfileInfo() {
 	return (
 		<div className={styles.profile}>
-			<Avatar imageSrc="/images/dmitry-a.jpg" size="s" />
+			<Avatar imageSrc="/images/profilepict.jpg" size="s" />
 			<div className={styles.profileInformation}>
 				<div>
 					<span className={styles.profileName}>D. Kargaev</span>

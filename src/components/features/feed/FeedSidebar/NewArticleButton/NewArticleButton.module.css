@@ -1,0 +1,27 @@
+.newArticleButton {
+	padding: 22px 30px;
+	background-color: var(--white-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.newArticleButton > button {
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 48px;
+	font-size: 12px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	cursor: pointer;
+}
+
+.newArticleButton > button:hover {
+	opacity: 0.7;
+}

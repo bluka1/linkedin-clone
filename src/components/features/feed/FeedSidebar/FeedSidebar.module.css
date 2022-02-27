@@ -1,3 +1,5 @@
 .feedSidebar {
-	background-color: lightsalmon;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }

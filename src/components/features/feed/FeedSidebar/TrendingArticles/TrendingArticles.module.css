@@ -1,0 +1,9 @@
+.trendingArticles {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.trendingArticles > *:hover {
+	opacity: 0.7;
+}

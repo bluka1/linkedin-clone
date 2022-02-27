@@ -1,0 +1,24 @@
+.postHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+	border-bottom: 1px solid var(--grey-senary);
+}
+
+.postHeader > p {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.postHeader > p > a {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 400;
+	color: var(--blue-primary);
+	margin: 0;
+	padding: 0;
+}
