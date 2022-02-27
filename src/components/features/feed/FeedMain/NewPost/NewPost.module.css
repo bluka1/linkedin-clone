@@ -1,0 +1,75 @@
+.newPost {
+	padding: 25px 30px;
+	border-radius: 4px;
+	background-color: var(--white-primary);
+	margin-top: 8px;
+}
+
+.newPost > h5 {
+	font-size: 12px;
+	line-height: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-bottom: 1px solid var(--grey-primary);
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+.newPostBody {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	max-height: 180px;
+}
+
+.newPostBody > textarea {
+	outline: none;
+	border: none;
+	padding: 0 10px 0 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	flex: 1;
+	word-wrap: wrap;
+	resize: none;
+	overflow: auto;
+	max-height: 100px;
+}
+
+.newPostBody > textarea:focus {
+	height: 100px;
+}
+
+.newPostBody > textarea::-webkit-scrollbar {
+	display: none;
+}
+
+.newPostBody > textarea::placeholder {
+	font-size: 18px;
+	color: var(--black-primary);
+	opacity: 0.2;
+}
+
+.newPostBody .icons {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.newPostBody .icons > svg:last-child {
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+	padding: 8px;
+	margin-left: 5px;
+	border-radius: 4px;
+}
+
+.newPostBody .icons > svg:hover {
+	cursor: pointer;
+	background-color: var(--grey-septenary);
+	border-radius: 4px;
+}
+
+.newPostBody .icons > svg:last-child:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}

@@ -1,9 +1,12 @@
-import React from 'react';
+import styles from './Feed.module.css';
+import FeedMain from './FeedMain/FeedMain';
+import FeedSidebar from './FeedSidebar/FeedSidebar';
 
 function Feed() {
 	return (
-		<div>
-			<h1>Hello, it's Feed here.</h1>
+		<div className={styles.feedContent}>
+			<FeedMain />
+			<FeedSidebar />
 		</div>
 	);
 }
