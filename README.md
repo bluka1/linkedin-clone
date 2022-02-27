@@ -1,6 +1,10 @@
 # LinkedIn clone
 
+This project is not completely done yet...
+
 This project was inspired by LinkedIn redesign on Figma. You can check it out on this [link](https://www.figma.com/community/file/979273848820041488).
+
+My latest build of the project can be seen on this [link](https://linkedin-clone-by-luka.netlify.app/).
 
 ## Goal of the project
 
