@@ -21,4 +21,14 @@
 	color: var(--blue-primary);
 	margin: 0;
 	padding: 0;
+	cursor: pointer;
+}
+
+.postHeader > svg {
+	cursor: pointer;
+}
+
+.postHeader > svg:hover {
+	background-color: var(--grey-quaternary);
+	border-radius: 4px;
 }
