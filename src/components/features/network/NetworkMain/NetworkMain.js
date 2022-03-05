@@ -1,5 +1,4 @@
-import { NavLink } from 'react-router-dom';
-import SectionSeparator from '../../../shared/SectionSeparator/SectionSeparator';
+import { NavLink, Outlet } from 'react-router-dom';
 import styles from './NetworkMain.module.css';
 
 function NetworkMain() {
@@ -7,24 +6,15 @@ function NetworkMain() {
 		<div className={styles.networkMain}>
 			<div className={styles.navbarContainer}>
 				<div className={styles.navbar}>
-					<NavLink
-						to="/profile"
-						className={({ isActive }) =>
-							location.pathname === '/profile' && isActive ? styles.active : styles.inactive
-						}
-					>
+					<NavLink to="received" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
 						received
 					</NavLink>
-					<NavLink to="activity" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+					<NavLink to="sent" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
 						sent
 					</NavLink>
 				</div>
 				<div className={styles.background}></div>
-				<SectionSeparator>
-					<span>
-						You have <a>2 new connections</a>
-					</span>
-				</SectionSeparator>
+				<Outlet />
 			</div>
 		</div>
 	);

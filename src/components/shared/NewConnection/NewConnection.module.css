@@ -1,0 +1,40 @@
+.newConnection {
+	width: 100%;
+	max-width: 790px;
+	padding: 20px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--white-primary);
+	border-radius: 4px;
+	position: relative;
+	cursor: pointer;
+}
+
+.newConnection:hover {
+	opacity: 0.8;
+}
+
+.newConnectionMessage {
+	display: flex;
+	flex: 1;
+	margin-left: 15px;
+}
+
+.newConnectionMessage > p {
+	border-left: 2px solid var(--blue-primary);
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 500;
+	width: 300px;
+	color: var(--black-primary);
+	opacity: 0.6;
+	padding: 0 45px 0 15px;
+}
+
+.newConnectionButtons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+}

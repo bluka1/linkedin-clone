@@ -12,6 +12,8 @@ import Profile from './components/features/profile/Profile';
 import General from './components/features/profile/ProfileMain/General';
 import Articles from './components/features/profile/ProfileMain/Articles';
 import Activity from './components/features/profile/ProfileMain/Activity';
+import NetworkMain from './components/features/network/NetworkMain/NetworkMain';
+import ReceivedConnections from './components/features/network/NetworkMain/ReceivedConnections';
 
 function App() {
 	return (
@@ -21,11 +23,21 @@ function App() {
 				<div className="content">
 					<Routes>
 						<Route path="/" element={<Feed />} />
-						<Route path="/network" element={<Network />} />
+						<Route path="/network" element={<Network />}>
+							<Route path="connections" element={<NetworkMain />}>
+								<Route path="received" element={<ReceivedConnections />} />
+								<Route path="sent" element={<NotImplemented />} />
+							</Route>
+							<Route path="invitations" element={<NotImplemented />} />
+							<Route path="teammates" element={<NotImplemented />} />
+							<Route path="groups" element={<NotImplemented />} />
+							<Route path="pages" element={<NotImplemented />} />
+							<Route path="hashtags" element={<NotImplemented />} />
+						</Route>
 						<Route path="/jobs" element={<Jobs />} />
 						<Route path="/chat" element={<Chat />} />
 						<Route path="/notices" element={<Notices />} />
-						<Route path="profile/*" element={<Profile />}>
+						<Route path="/profile" element={<Profile />}>
 							<Route index element={<General />} />
 							<Route path="articles" element={<Articles />} />
 							<Route path="activity" element={<Activity />} />

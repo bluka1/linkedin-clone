@@ -29,3 +29,14 @@
 	color: var(--blue-primary);
 	border: 1px solid var(--blue-primary);
 }
+
+.btn.outlinedBlack {
+	background-color: var(--white-primary);
+	color: var(--grey-tenary);
+	border: 1px solid var(--grey-senary);
+}
+
+.btn.outlinedBlack:hover {
+	color: var(--grey-secondary);
+	border: 1px solid var(--grey-secondary);
+}
