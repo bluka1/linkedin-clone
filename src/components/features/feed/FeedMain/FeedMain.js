@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { ReactComponent as FileIcon } from '../../../../assets/icons/filetext.svg';
+import { ReactComponent as PaperclipIcon } from '../../../../assets/icons/paperclip.svg';
+import { ReactComponent as ImageIcon } from '../../../../assets/icons/image.svg';
+import { ReactComponent as FilmIcon } from '../../../../assets/icons/film.svg';
+import { ReactComponent as SendIcon } from '../../../../assets/icons/send.svg';
 import ExpandButton from '../../../core/ExpandButton/ExpandButton';
 import Select from '../../../core/Select/Select';
 import Attachment from '../../../shared/Attachment/Attachment';
 import SectionSeparator from '../../../shared/SectionSeparator/SectionSeparator';
 import styles from './FeedMain.module.css';
-import NewPost from './NewPost/NewPost';
+import NewPost from '../../../shared/NewPost/NewPost';
 import Post from './Post/Post';
 import PostBody from './Post/PostBody/PostBody';
 import PostFooter from './Post/PostFooter/PostFooter';
@@ -18,9 +22,11 @@ function FeedMain() {
 		setShown((prevState) => !prevState);
 	};
 
+	const icons = [PaperclipIcon, ImageIcon, FilmIcon, SendIcon];
+
 	return (
 		<div className={styles.feedMain}>
-			<NewPost />
+			<NewPost title="New post" placeholder="What’s on your mind?" icons={icons} />
 			<SectionSeparator>
 				<p>sort by: </p>
 				<Select

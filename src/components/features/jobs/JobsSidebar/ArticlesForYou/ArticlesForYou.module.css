@@ -1,0 +1,9 @@
+.articlesForYou {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.articlesForYou > *:hover {
+	opacity: 0.7;
+}
