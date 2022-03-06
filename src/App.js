@@ -5,7 +5,7 @@ import Feed from './components/features/feed/Feed';
 import Header from './components/features/header/Header';
 import Jobs from './components/features/jobs/Jobs/Jobs';
 import Network from './components/features/network/Network/Network';
-import Notices from './components/features/notices/Notices/Notices';
+import Notices from './components/features/notices/Notices';
 import NotImplemented from './components/features/NotImplemented/NotImplemented';
 import Footer from './components/features/footer/Footer';
 import Profile from './components/features/profile/Profile';
