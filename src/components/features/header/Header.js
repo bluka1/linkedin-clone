@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import MenuItem from './MenuItem/MenuItem';
@@ -12,8 +13,14 @@ import { ReactComponent as SearchIcon } from '../../../assets/icons/search.svg';
 import { ReactComponent as moreIcon } from '../../../assets/icons/more.svg';
 import { ReactComponent as LogoIcon } from '../../../assets/icons/blue-logo.svg';
 import styles from './Header.module.css';
+import OtherModal from '../other/OtherModal';
 
 function Header() {
+	const [shown, setShown] = useState(false);
+
+	const modalHandler = () => {
+		setShown((prevState) => !prevState);
+	};
 	return (
 		<div className={styles.header}>
 			<div className={styles.headerContent}>
@@ -47,11 +54,10 @@ function Header() {
 							<ProfileInfo />
 						</NavLink>
 					</div>
-					<div className={styles.otherItem}>
-						<NavLink to="/notimplemented" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-							<MenuItem Icon={moreIcon} text="other" />
-						</NavLink>
+					<div className={styles.otherItem} onClick={modalHandler}>
+						<MenuItem Icon={moreIcon} text="other" />
 					</div>
+					{shown && <OtherModal hideModal={modalHandler} />}
 				</div>
 			</div>
 		</div>
