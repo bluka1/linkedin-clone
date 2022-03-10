@@ -12,9 +12,11 @@ function NoticesMain() {
 
 	return (
 		<div className={styles.noticesMain}>
-			<SectionSeparator>
-				<span>recent</span>
-			</SectionSeparator>
+			<div className={styles.sectionSeparator}>
+				<SectionSeparator>
+					<span>recent</span>
+				</SectionSeparator>
+			</div>
 
 			<div className={styles.noticesContent}>
 				<Notice images={images1} title="You appeared in 9 searches this week" timeAgo="3 hours" />
@@ -26,9 +28,11 @@ function NoticesMain() {
 				/>
 			</div>
 
-			<SectionSeparator>
-				<span>earlier</span>
-			</SectionSeparator>
+			<div className={styles.sectionSeparator}>
+				<SectionSeparator>
+					<span>earlier</span>
+				</SectionSeparator>
+			</div>
 
 			<div className={styles.noticesContent}>
 				<Notice images={images4} title="We found jobs that you may be interested" timeAgo="2 days ago" />

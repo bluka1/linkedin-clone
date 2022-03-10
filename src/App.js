@@ -14,6 +14,7 @@ import Articles from './components/features/profile/ProfileMain/Articles';
 import Activity from './components/features/profile/ProfileMain/Activity';
 import NetworkMain from './components/features/network/NetworkMain/NetworkMain';
 import ReceivedConnections from './components/features/network/NetworkMain/ReceivedConnections';
+import NoticesMain from './components/features/notices/NoticesMain/NoticesMain';
 
 function App() {
 	return (
@@ -36,7 +37,10 @@ function App() {
 						</Route>
 						<Route path="/jobs" element={<Jobs />} />
 						<Route path="/chat" element={<Chat />} />
-						<Route path="/notices" element={<Notices />} />
+						<Route path="/notices" element={<Notices />}>
+							<Route index element={<NoticesMain />} />
+							<Route path="notificationSettings" element={<NotImplemented />} />
+						</Route>
 						<Route path="/profile" element={<Profile />}>
 							<Route index element={<General />} />
 							<Route path="articles" element={<Articles />} />
