@@ -1,0 +1,35 @@
+.notice {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	background-color: var(--white-primary);
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+
+.noticeImages {
+	display: flex;
+}
+
+.noticeImages > div:not(:first-child) {
+	transform: translateX(-20px);
+}
+
+.noticeDescription {
+	flex: 1;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.noticeTitle {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 600;
+}
+
+.noticeTimeAgo {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 400;
+}
