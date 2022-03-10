@@ -1,0 +1,136 @@
+.otherModalBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	display: block;
+	background-color: var(--black-primary);
+	opacity: 0.7;
+}
+
+.otherModalContainer {
+	height: 100vh;
+	width: 460px;
+	position: absolute;
+	z-index: 101;
+	top: 0;
+	right: 17px;
+	display: flex;
+}
+
+.otherModal {
+	display: flex;
+	margin-left: 90px;
+	flex-direction: column;
+	width: 100%;
+	max-width: 370px;
+	background-color: var(--white-primary);
+}
+
+.closeButton {
+	cursor: pointer;
+	background-color: var(--white-primary);
+	outline: none;
+	border: none;
+	color: var(--black-primary);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 16px;
+	width: 90px;
+	height: 80px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.closeButton:hover {
+	background-color: var(--grey-primary);
+}
+
+.closeButton > p {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+	color: var(--black-primary);
+	text-transform: uppercase;
+}
+
+.otherModalTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-height: 80px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.otherModalTitle > h5 {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 600;
+	padding-left: 20px;
+}
+
+.helpButton {
+	cursor: pointer;
+	background-color: var(--white-primary);
+	outline: none;
+	border: none;
+	color: var(--blue-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 12px;
+	width: 90px;
+	height: 80px;
+}
+
+.helpButton:hover {
+	background-color: var(--grey-primary);
+}
+
+.helpButton > p {
+	margin: 0;
+	padding: 0;
+	color: var(--blue-primary);
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+}
+
+.otherModalContent {
+	padding: 20px 30px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.otherModalOptions {
+	padding-top: 20px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 150px 150px;
+}
+
+.otherModalServices {
+	padding: 20px 30px 40px 30px;
+	border-bottom: 1px solid var(--grey-primary);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.servicesTitle {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.otherModalPremium {
+	padding: 20px 30px;
+}

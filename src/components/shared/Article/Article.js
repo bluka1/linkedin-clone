@@ -1,4 +1,3 @@
-import styles from './Article.module.css';
 import ArticleBig from './ArticleBig/ArticleBig';
 import ArticleSmall from './ArticleSmall/ArticleSmall';
 
