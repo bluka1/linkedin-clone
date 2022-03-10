@@ -1,0 +1,47 @@
+.job {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	padding: 20px 30px;
+	background-color: var(--white-primary);
+	border-radius: 4px;
+}
+
+.jobDescription {
+	flex: 1;
+}
+
+.jobDescription > h5 {
+	margin: 0 0 2px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.jobDetails {
+	margin-bottom: 8px;
+}
+
+.jobDescription .publisher {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 500;
+	margin: 0 10px 0 0;
+}
+
+.jobDescription .location {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.jobText {
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 600;
+	margin: 0;
+	max-width: 405px;
+}

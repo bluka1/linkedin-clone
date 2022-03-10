@@ -1,0 +1,9 @@
+.jobsMain {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.sectionSeparator {
+	margin: 30px 0;
+}

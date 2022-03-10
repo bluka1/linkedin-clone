@@ -1,0 +1,8 @@
+.jobs {
+	display: grid;
+	grid-template-columns: 850px 290px;
+	gap: 40px;
+	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
+}

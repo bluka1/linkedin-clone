@@ -4,6 +4,7 @@
 	justify-content: space-between;
 	padding: 20px;
 	background-color: var(--grey-septenary);
+	cursor: pointer;
 }
 
 .attachment .description {
