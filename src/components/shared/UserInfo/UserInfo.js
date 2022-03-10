@@ -1,6 +1,6 @@
 import styles from './UserInfo.module.css';
 
-function UserInfo({ imageSrc, name, description, connections, background }) {
+function UserInfo({ imageSrc, name, description, connections, background, Icon }) {
 	return (
 		<div className={`${styles.userInfo} ${styles[background]}`}>
 			<div className={styles.userInfoPicture}>
@@ -11,6 +11,11 @@ function UserInfo({ imageSrc, name, description, connections, background }) {
 				<p className={styles.userDescription}>{description}</p>
 				{connections && <p className={styles.connections}>{connections} connections</p>}
 			</div>
+			{Icon && (
+				<div className={styles.articleIcon}>
+					<Icon />
+				</div>
+			)}
 		</div>
 	);
 }

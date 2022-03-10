@@ -1,0 +1,44 @@
+.searchModalBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--black-primary);
+	opacity: 0.6;
+}
+
+.searchModal {
+	position: absolute;
+	top: 0;
+	background-color: var(--white-primary);
+	width: 368px;
+	margin-left: -40px;
+}
+
+.searchBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 22px 30px;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.searchBar > input {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+.searchBar > svg {
+	width: 16px;
+	height: 16px;
+	color: var(--white-primary);
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+	border-radius: 4px;
+	padding: 10px;
+}

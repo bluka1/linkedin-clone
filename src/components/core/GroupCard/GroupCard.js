@@ -1,17 +1,24 @@
 import styles from './GroupCard.module.css';
 
-function GroupCard(props) {
+function GroupCard({ subtitle, imageSrc, title, Icon }) {
 	return (
-		<div className={props.subtitle ? styles.groupCardSubtitle : styles.groupCardTitle}>
-			<img src={props.imageSrc} alt="group icon" />
+		<div className={subtitle ? styles.groupCardSubtitle : styles.groupCardTitle}>
+			<img src={imageSrc} alt="group icon" />
 
-			{props.subtitle ? (
-				<div className={styles.groupCardInfo}>
-					<h5>{props.title}</h5>
-					<p>{props.subtitle}</p>
-				</div>
+			{subtitle ? (
+				<>
+					<div className={styles.groupCardInfo}>
+						<h5>{title}</h5>
+						<p>{subtitle}</p>
+					</div>
+					{Icon && (
+						<div className={styles.articleIcon}>
+							<Icon />
+						</div>
+					)}
+				</>
 			) : (
-				<h5>{props.title}</h5>
+				<h5>{title}</h5>
 			)}
 		</div>
 	);

@@ -14,12 +14,18 @@ import { ReactComponent as moreIcon } from '../../../assets/icons/more.svg';
 import { ReactComponent as LogoIcon } from '../../../assets/icons/blue-logo.svg';
 import styles from './Header.module.css';
 import OtherModal from '../other/OtherModal';
+import SearchModal from './SearchModal/SearchModal';
 
 function Header() {
 	const [shown, setShown] = useState(false);
+	const [searchShown, setSearchShown] = useState(false);
 
 	const modalHandler = () => {
 		setShown((prevState) => !prevState);
+	};
+
+	const searchHandler = () => {
+		setSearchShown((prevState) => !prevState);
 	};
 	return (
 		<div className={styles.header}>
@@ -45,10 +51,11 @@ function Header() {
 					</div>
 				</div>
 				<div className={styles.headerRight}>
-					<div className={styles.search}>
-						<SearchIcon />
-						<input type="text" placeholder="Search" />
+					<div className={styles.search} onClick={searchHandler}>
+						{searchShown ? '' : <SearchIcon />}
+						<input type="text" placeholder="Search" data-toggle="modal" data-target="#searchModal" />
 					</div>
+					{searchShown && <SearchModal id="searchModal" onClick={searchHandler} />}
 					<div className={styles['headerRight-profile']}>
 						<NavLink to="/profile">
 							<ProfileInfo />
