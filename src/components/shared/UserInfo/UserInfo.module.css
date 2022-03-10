@@ -1,6 +1,16 @@
 .userInfo {
 	display: flex;
 	align-items: center;
+	position: relative;
+	border-radius: 4px;
+}
+
+.userInfo.primary {
+	background-color: var(--white-primary);
+}
+
+.userInfo.secondary {
+	background-color: var(--white-secondary);
 }
 
 .userInfo > img {
@@ -29,4 +39,12 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	margin-bottom: 5px;
+}
+
+.userInfo .connections {
+	color: var(--blue-primary);
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 500;
 }

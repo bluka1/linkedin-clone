@@ -1,0 +1,36 @@
+.sectionSeparatorMenu {
+	margin: 30px 0;
+}
+
+.sectionLink {
+	cursor: pointer;
+}
+
+.newConnections {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.sectionSeparator {
+	margin: 40px 0;
+}
+
+.recentConnections {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.recentConnectionTime {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	font-size: 10px;
+	line-height: 15px;
+	color: var(--black-primary);
+	opacity: 0.7;
+	font-weight: 400;
+}

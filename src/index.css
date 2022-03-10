@@ -8,6 +8,7 @@
 	--grey-quinary: #e5e5e5;
 	--grey-senary: #e7e7e7;
 	--grey-septenary: #e9f0f8;
+	--grey-tenary: #b7b7b7;
 	--green-primary: #02b033;
 	--black-primary: #181818;
 	--blue-primary: #0275b1;
@@ -15,6 +16,7 @@
 	--blue-tertirary: #0e6795;
 	--white-primary: #ffffff;
 	--white-secondary: #fcfdfd;
+	--orange-primary: #ed8f03;
 }
 
 body {
