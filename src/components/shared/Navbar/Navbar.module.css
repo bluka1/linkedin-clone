@@ -1,5 +1,6 @@
 .navbar {
 	width: 100%;
+	max-width: 290px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 4px;
@@ -8,8 +9,6 @@
 .navbar > a {
 	text-transform: uppercase;
 	text-align: center;
-	width: 100%;
-	height: max-content;
 	max-width: 290px;
 	color: var(--black-primary);
 	font-weight: 700;

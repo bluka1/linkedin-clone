@@ -21,6 +21,7 @@
 }
 
 .chatRooms > a:hover {
+	text-decoration: none;
 	background-color: var(--grey-primary);
 }
 

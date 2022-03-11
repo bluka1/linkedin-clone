@@ -9,9 +9,9 @@ function Room(props) {
 			<div className={styles.roomHeader}>
 				<div className={styles.roomHeaderContent}>
 					<p>
-						Chat with <span>Kyle Fisher</span>
+						Chat with <span className={styles.roomHeaderName}>Kyle Fisher</span>
 					</p>
-					<p>Last online: 4 hours ago</p>
+					<p className={styles.lastOnline}>Last online: 4 hours ago</p>
 				</div>
 				<div className={styles.roomHeaderContent}>
 					<PaperclipIcon />

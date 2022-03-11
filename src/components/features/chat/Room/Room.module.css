@@ -21,6 +21,20 @@
 	align-items: center;
 }
 
+.room .roomHeader .roomHeaderContent > p {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 700;
+}
+.room .roomHeader .roomHeaderContent .roomHeaderName {
+	color: var(--blue-primary);
+}
+
+.room .roomHeader .roomHeaderContent .lastOnline {
+	opacity: 0.6;
+	font-weight: 400;
+}
+
 .room .roomHeader .roomHeaderContent > svg {
 	color: var(--blue-primary);
 }
