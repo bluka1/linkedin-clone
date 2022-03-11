@@ -12,15 +12,17 @@ function ArticleSmall({ imageSrc, title, subtitle, articleType, Icon }) {
 				)}
 				<img src={imageSrc} alt="course picture" />
 			</div>
-			<div>
-				<p className={styles.title}>{title}</p>
-				<p className={styles.subtitle}>{subtitle}</p>
-			</div>
-			{Icon && (
-				<div className={styles.articleIcon}>
-					<Icon />
+			<div className={styles.description}>
+				<div>
+					<p className={styles.title}>{title}</p>
+					<p className={styles.subtitle}>{subtitle}</p>
 				</div>
-			)}
+				{Icon && (
+					<div className={styles.articleIcon}>
+						<Icon />
+					</div>
+				)}
+			</div>
 		</div>
 	);
 }

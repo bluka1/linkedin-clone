@@ -52,7 +52,7 @@ function Header() {
 				</div>
 				<div className={styles.headerRight}>
 					<div className={styles.search} onClick={searchHandler}>
-						{searchShown ? '' : <SearchIcon />}
+						<SearchIcon />
 						<input type="text" placeholder="Search" data-toggle="modal" data-target="#searchModal" />
 					</div>
 					{searchShown && <SearchModal id="searchModal" onClick={searchHandler} />}

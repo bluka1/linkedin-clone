@@ -13,7 +13,7 @@
 	top: 0;
 	background-color: var(--white-primary);
 	width: 368px;
-	margin-left: -40px;
+	transform: translateX(-40px);
 }
 
 .searchBar {
@@ -41,4 +41,65 @@
 	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
 	border-radius: 4px;
 	padding: 10px;
+}
+
+.searchJobs,
+.searchUsers,
+.searchArticles {
+	margin: 0px 30px;
+	padding: 20px 0;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.searchJobsTitle,
+.searchUsersTitle,
+.searchArticlesTitle {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+	color: var(--black-primary);
+	opacity: 0.2;
+	padding: 5px 0 15px 0;
+	margin: 0;
+}
+
+.searchJob {
+	padding-bottom: 10px;
+}
+
+.searchJobs > a,
+.searchUsers > a,
+.searchArticles > a {
+	text-transform: uppercase;
+	cursor: pointer;
+	color: var(--blue-primary);
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+}
+
+.searchUser {
+	padding: 15px 30px 15px 15px;
+	border: 1px solid var(--grey-primary);
+	margin-bottom: 10px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.searchUser:nth-child(2) {
+	margin-bottom: 15px;
+}
+
+.searchArticle {
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 15px 30px 15px 15px;
+	border: 1px solid var(--grey-primary);
+	margin-bottom: 15px;
+}
+
+.searchUser:hover,
+.searchArticle:hover {
+	border: 1px solid var(--black-primary);
 }

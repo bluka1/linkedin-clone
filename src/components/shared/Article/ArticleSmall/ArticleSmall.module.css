@@ -40,7 +40,12 @@ p {
 	margin: 0;
 }
 
-.articleSmall .title {
+.articleSmall .description {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.articleSmall .description .title {
 	position: relative;
 	font-size: 14px;
 	font-weight: bold;
@@ -51,7 +56,7 @@ p {
 	overflow: hidden;
 }
 
-.articleSmall .subtitle {
+.articleSmall .description .subtitle {
 	font-size: 10px;
 	line-height: 15px;
 	font-weight: 500;

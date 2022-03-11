@@ -12,13 +12,14 @@ function SearchModal(props) {
 	return (
 		<>
 			<div className={styles.searchModalBackground} onClick={props.onClick}></div>
-			<div className={styles.searchModal}>
+			<div className={styles.searchModal} onClick={props.onClick}>
 				<div className={styles.searchBar}>
 					<input />
 					<SearchIcon />
 				</div>
 
 				<div className={styles.searchJobs}>
+					<h5 className={styles.searchJobsTitle}>Jobs</h5>
 					<div className={styles.searchJob}>
 						<GroupCard imageSrc="/images/upwork.jpg" title="UX/UI Designer" subtitle="Upwork" Icon={VectorIcon} />
 					</div>
@@ -34,6 +35,7 @@ function SearchModal(props) {
 				</div>
 
 				<div className={styles.searchUsers}>
+					<h5 className={styles.searchUsersTitle}>Users</h5>
 					<div className={styles.searchUser}>
 						<UserInfo
 							imageSrc="/images/brandon.jpg"
@@ -54,6 +56,8 @@ function SearchModal(props) {
 				</div>
 
 				<div className={styles.searchArticles}>
+					<h5 className={styles.searchArticlesTitle}>Articles</h5>
+
 					<div className={styles.searchArticle}>
 						<Article
 							size="small"
@@ -63,7 +67,7 @@ function SearchModal(props) {
 							Icon={VectorIcon}
 						/>
 					</div>
-					<Link to="/jobs">All articles (30)</Link>
+					<Link to="/notices">All articles (30)</Link>
 				</div>
 				<NewArticleButton text="All results (2,000+)" />
 			</div>
