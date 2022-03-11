@@ -1,0 +1,94 @@
+.room {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: var(--white-primary);
+	border-radius: 4px;
+}
+
+.room .roomHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--grey-primary);
+}
+
+.room .roomHeader .roomHeaderContent {
+	display: flex;
+	gap: 14px;
+	align-items: center;
+}
+
+.room .roomHeader .roomHeaderContent > svg {
+	color: var(--blue-primary);
+}
+
+.room .roomHeader .roomHeaderContent > svg:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.roomMain {
+	display: flex;
+	flex: 1;
+	max-height: 520px;
+	overflow-y: auto;
+}
+
+.room .roomFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	border-top: 1px solid var(--grey-primary);
+}
+
+.room .roomFooter input {
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	flex: 1;
+}
+
+.room .roomFooter input::placeholder {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	color: var(--black-primary);
+	opacity: 0.2;
+}
+
+.roomFooterIcons {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.roomFooterIcons > svg:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	border-radius: 4px;
+}
+
+.roomFooterIcons .roomFooterSendIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+	cursor: pointer;
+}
+
+.roomFooterIcons .roomFooterSendIcon:hover {
+	opacity: 0.6;
+}
+
+.roomFooterIcons .roomFooterSendIcon > svg {
+	width: 16px;
+	height: 16px;
+	padding: 8px;
+}

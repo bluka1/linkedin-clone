@@ -1,0 +1,30 @@
+.chatRoom {
+	width: 100%;
+	max-width: 240px;
+	border-top: 1px solid var(--grey-primary);
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	padding: 15px 25px;
+}
+
+.chatRoom:hover {
+	background-color: var(--grey-primary);
+}
+
+.chatRoom .chatPersonName {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px;
+	margin-bottom: 5px;
+}
+
+.chatRoom div .chatMessage {
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 15px;
+	max-width: 130px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

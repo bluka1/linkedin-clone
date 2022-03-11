@@ -1,0 +1,39 @@
+.chat {
+	display: grid;
+	grid-template-columns: 290px 850px;
+	gap: 40px;
+}
+
+.chatNavbar {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 4px;
+}
+
+.chatRooms {
+	background-color: var(--white-secondary);
+}
+
+.chatRooms > a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.chatRooms > a:hover {
+	background-color: var(--grey-primary);
+}
+
+.chatRooms > a.active > div {
+	text-decoration: none;
+	opacity: 0.6;
+	border-left: 10px solid var(--blue-primary);
+}
+
+.chat .chatNavbar .chatRooms .title {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 600;
+	padding: 25px 30px 20px 30px;
+}

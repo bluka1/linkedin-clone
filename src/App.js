@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Chat from './components/features/chat/Chat/Chat';
+import Chat from './components/features/chat/Chat';
 import Feed from './components/features/feed/Feed';
 import Header from './components/features/header/Header';
 import Jobs from './components/features/jobs/Jobs';
@@ -15,6 +15,7 @@ import Activity from './components/features/profile/ProfileMain/Activity';
 import NetworkMain from './components/features/network/NetworkMain/NetworkMain';
 import ReceivedConnections from './components/features/network/NetworkMain/ReceivedConnections';
 import NoticesMain from './components/features/notices/NoticesMain/NoticesMain';
+import Room from './components/features/chat/Room/Room';
 
 function App() {
 	return (
@@ -36,7 +37,14 @@ function App() {
 							<Route path="hashtags" element={<NotImplemented />} />
 						</Route>
 						<Route path="/jobs" element={<Jobs />} />
-						<Route path="/chat" element={<Chat />} />
+						<Route path="/chat" element={<Chat />}>
+							<Route path="darlene" element={<NotImplemented />} />
+							<Route path="theresa" element={<NotImplemented />} />
+							<Route path="brandon" element={<NotImplemented />} />
+							<Route path="kyle" element={<Room />} />
+							<Route path="audrey" element={<NotImplemented />} />
+							<Route path="design" element={<NotImplemented />} />
+						</Route>
 						<Route path="/notices" element={<Notices />}>
 							<Route path="notifications" element={<NoticesMain />} />
 							<Route path="notificationSettings" element={<NotImplemented />} />

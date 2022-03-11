@@ -6,6 +6,11 @@
 	cursor: pointer;
 }
 
+.avatar.xxxs {
+	width: 9px;
+	height: 9px;
+}
+
 .avatar.xxs {
 	width: 24px;
 	height: 24px;
