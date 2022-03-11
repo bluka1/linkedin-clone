@@ -12,7 +12,7 @@ import styles from './Network.module.css';
 
 function Network() {
 	const navlinks = [
-		{ linkTo: 'connections', icon: <LinkIcon />, title: 'connections', number: 1038 },
+		{ linkTo: 'connections/received', icon: <LinkIcon />, title: 'connections', number: 1038 },
 		{ linkTo: 'invitations', icon: <DiscIcon />, title: 'invitations', number: 2 },
 		{ linkTo: 'teammates', icon: <ArchiveIcon />, title: 'teammates' },
 		{ linkTo: 'groups', icon: <GroupsIcon />, title: 'groups', number: 6 },

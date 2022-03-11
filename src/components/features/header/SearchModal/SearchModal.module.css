@@ -14,6 +14,7 @@
 	background-color: var(--white-primary);
 	width: 368px;
 	transform: translateX(-40px);
+	overflow-y: auto;
 }
 
 .searchBar {

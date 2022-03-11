@@ -12,14 +12,13 @@
 
 .otherModalContainer {
 	min-height: 100vh;
-	height: 100vh;
 	width: 460px;
 	position: absolute;
 	z-index: 101;
 	top: 0;
 	right: 10px;
 	display: flex;
-	overflow: scroll;
+	overflow-y: auto;
 }
 
 .otherModalContainer::-webkit-scrollbar {
@@ -27,6 +26,9 @@
 }
 
 .otherModal {
+	min-height: 100vh;
+	overflow-y: auto;
+
 	display: flex;
 	margin-left: 90px;
 	flex-direction: column;
