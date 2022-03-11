@@ -38,7 +38,7 @@ function App() {
 						<Route path="/jobs" element={<Jobs />} />
 						<Route path="/chat" element={<Chat />} />
 						<Route path="/notices" element={<Notices />}>
-							<Route index element={<NoticesMain />} />
+							<Route path="notifications" element={<NoticesMain />} />
 							<Route path="notificationSettings" element={<NotImplemented />} />
 						</Route>
 						<Route path="/profile" element={<Profile />}>

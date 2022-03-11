@@ -11,13 +11,19 @@
 }
 
 .otherModalContainer {
+	min-height: 100vh;
 	height: 100vh;
 	width: 460px;
 	position: absolute;
 	z-index: 101;
 	top: 0;
-	right: 17px;
+	right: 10px;
 	display: flex;
+	overflow: scroll;
+}
+
+.otherModalContainer::-webkit-scrollbar {
+	width: 0;
 }
 
 .otherModal {

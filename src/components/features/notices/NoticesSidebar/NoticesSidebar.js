@@ -5,7 +5,7 @@ import styles from './NoticesSidebar.module.css';
 
 function NoticesSidebar() {
 	const links = [
-		{ linkTo: '/notices', title: 'notifications' },
+		{ linkTo: 'notifications', title: 'notifications' },
 		{ linkTo: 'notificationSettings', title: 'notification settings' },
 	];
 
