@@ -17,6 +17,10 @@
 	overflow-y: auto;
 }
 
+.searchModal::-webkit-scrollbar {
+	width: 0px;
+}
+
 .searchBar {
 	display: flex;
 	justify-content: space-between;

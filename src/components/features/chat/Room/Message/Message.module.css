@@ -1,0 +1,59 @@
+.message.dmitry {
+	display: flex;
+	flex-direction: column;
+}
+
+.message.otherSender {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.otherSender {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.messageText {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	padding: 12px 20px;
+	border-radius: 4px;
+	max-width: 600px;
+}
+
+.messageInfo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.messageInfo > svg {
+	padding-top: 8px;
+}
+
+.messageTime {
+	padding-top: 8px;
+}
+
+.message.dmitry .messageText {
+	background-color: var(--blue-primary);
+	color: var(--white-primary);
+}
+
+.message.otherSender .messageText {
+	background-color: var(--grey-septenary);
+}
+
+.message.otherSender .messageTime {
+	align-self: flex-end;
+}
+
+.messageTime {
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 15px;
+	opacity: 0.6;
+}
