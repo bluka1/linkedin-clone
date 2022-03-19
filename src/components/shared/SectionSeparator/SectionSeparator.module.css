@@ -7,6 +7,7 @@
 
 .sectionSeparator .sectionSeparatorContent {
 	display: flex;
+	gap: 5px;
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
@@ -16,7 +17,7 @@
 .sectionSeparatorContent::before,
 .sectionSeparatorContent::after {
 	content: '';
-	width: 40%;
+	width: 39%;
 	height: 1px;
 	background: var(--grey-senary);
 }

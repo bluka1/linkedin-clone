@@ -38,16 +38,16 @@ function App() {
 						</Route>
 						<Route path="/jobs" element={<Jobs />} />
 						<Route path="/chat" element={<Chat />}>
-							<Route path="darlene" element={<NotImplemented />} />
-							<Route path="theresa" element={<NotImplemented />} />
-							<Route path="brandon" element={<NotImplemented />} />
+							<Route path="darlene" element={<Room />} />
+							<Route path="theresa" element={<Room />} />
+							<Route path="brandon" element={<Room />} />
 							<Route path="kyle" element={<Room />} />
-							<Route path="audrey" element={<NotImplemented />} />
+							<Route path="audrey" element={<Room />} />
 							<Route path="design" element={<NotImplemented />} />
 						</Route>
 						<Route path="/notices" element={<Notices />}>
 							<Route path="notifications" element={<NoticesMain />} />
-							<Route path="notificationSettings" element={<NotImplemented />} />
+							<Route path="notification-settings" element={<NotImplemented />} />
 						</Route>
 						<Route path="/profile" element={<Profile />}>
 							<Route index element={<General />} />

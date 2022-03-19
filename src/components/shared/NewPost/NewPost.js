@@ -8,7 +8,7 @@ function NewPost(props) {
 				<textarea type="text" placeholder={props.placeholder} />
 				<div className={styles.icons}>
 					{props.icons.map((Icon) => {
-						return <Icon />;
+						return <Icon key={Date.now() - Math.random()} />;
 					})}
 				</div>
 			</div>

@@ -76,19 +76,22 @@
 	border-top: 1px solid var(--grey-primary);
 }
 
-.room .roomFooter input {
+.room .roomFooter textarea {
 	border: none;
 	outline: none;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 18px;
 	flex: 1;
+	max-width: 650px;
+	resize: none;
 }
 
-.room .roomFooter input::placeholder {
+.room .roomFooter textarea::placeholder {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 18px;
+	transform: translateY(5px);
 	color: var(--black-primary);
 	opacity: 0.2;
 }

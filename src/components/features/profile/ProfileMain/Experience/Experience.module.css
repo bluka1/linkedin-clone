@@ -5,7 +5,8 @@
 }
 
 .experience {
-	display: flex;
+	display: grid;
+	grid-template-columns: 54px 1fr;
 	gap: 16px;
 }
 

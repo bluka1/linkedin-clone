@@ -42,6 +42,7 @@ function Select(props) {
 			defaultValue={props.defaultValue}
 			options={props.selectOptions}
 			styles={props.styles && props.styles === 'separatorStyles' ? separatorStyles : selectStyles}
+			isSearchable={false}
 		/>
 	);
 }

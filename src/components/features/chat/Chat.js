@@ -1,4 +1,5 @@
-import { Outlet } from 'react-router';
+import { useEffect } from 'react';
+import { Outlet, useLocation, useNavigate } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
 import NewArticleButton from '../../shared/NewArticleButton/NewArticleButton';
@@ -40,6 +41,16 @@ function Chat() {
 			chatMessage: 'Can you guys help me with it?',
 		},
 	];
+
+	const location = useLocation();
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (location.pathname === '/chat') {
+			navigate('/chat/darlene');
+		}
+	}, [navigate, location]);
+
 	return (
 		<div className={styles.chat}>
 			<div className={styles.chatNavbar}>

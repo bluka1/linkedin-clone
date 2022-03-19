@@ -36,10 +36,7 @@ function Header() {
 						<NavLink to="/" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 							<MenuItem Icon={rssIcon} text="feed" />
 						</NavLink>
-						<NavLink
-							to="/network/connections/received"
-							className={({ isActive }) => (isActive ? styles.active : undefined)}
-						>
+						<NavLink to="/network" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 							<MenuItem Icon={usersIcon} text="network" />
 						</NavLink>
 						<NavLink to="/jobs" className={({ isActive }) => (isActive ? styles.active : undefined)}>
@@ -48,7 +45,7 @@ function Header() {
 						<NavLink to="/chat" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 							<MenuItem Icon={msgIcon} text="chat" />
 						</NavLink>
-						<NavLink to="/notices/notifications" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+						<NavLink to="/notices" className={({ isActive }) => (isActive ? styles.active : undefined)}>
 							<MenuItem Icon={bellIcon} text="notices" />
 						</NavLink>
 					</div>

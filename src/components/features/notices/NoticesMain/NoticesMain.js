@@ -5,10 +5,10 @@ import styles from './NoticesMain.module.css';
 
 function NoticesMain() {
 	const images1 = ['/images/upwork.jpg', '/images/facebook.jpg', '/images/google.jpg'];
-	const images2 = [];
-	const images3 = [];
-	const images4 = [];
-	const images5 = [];
+	const images2 = ['/images/kyle.jpg', '/images/brandon.jpg', '/images/audrey.jpg'];
+	const images3 = ['/images/audrey.jpg', '/images/theresa.jpg', '/images/eduardo.jpg'];
+	const images4 = ['/images/facebook.jpg', '/images/instagram.jpg', '/images/linkedin.jpg'];
+	const images5 = ['/images/darlene.jpg', '/images/brandon.jpg', '/images/kyle.jpg'];
 
 	return (
 		<div className={styles.noticesMain}>

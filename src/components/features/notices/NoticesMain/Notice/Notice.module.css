@@ -12,14 +12,19 @@
 	display: flex;
 }
 
-.noticeImages > div:not(:first-child) {
+.noticeImages > div:nth-child(2) {
 	transform: translateX(-20px);
+}
+
+.noticeImages > div:last-child {
+	transform: translateX(-40px);
 }
 
 .noticeDescription {
 	flex: 1;
 	overflow: hidden;
 	white-space: nowrap;
+	transform: translateX(-40px);
 }
 
 .noticeTitle {

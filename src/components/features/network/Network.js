@@ -1,4 +1,5 @@
-import { Outlet } from 'react-router';
+import { useEffect } from 'react';
+import { Outlet, useLocation, useNavigate } from 'react-router';
 import { ReactComponent as LinkIcon } from '../../../assets/icons/link.svg';
 import { ReactComponent as DiscIcon } from '../../../assets/icons/disc.svg';
 import { ReactComponent as ArchiveIcon } from '../../../assets/icons/archive.svg';
@@ -19,6 +20,16 @@ function Network() {
 		{ linkTo: 'pages', icon: <LayersIcon />, title: 'pages', number: 28 },
 		{ linkTo: 'hashtags', icon: <HashIcon />, title: 'hashtags', number: 8 },
 	];
+
+	const location = useLocation();
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (location.pathname === '/network') {
+			navigate('/network/connections');
+		}
+	}, [navigate, location]);
+
 	return (
 		<div className={styles.network}>
 			<Navbar navlinks={navlinks} />

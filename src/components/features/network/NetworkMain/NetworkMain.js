@@ -1,7 +1,17 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import styles from './NetworkMain.module.css';
 
 function NetworkMain() {
+	const location = useLocation();
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (location.pathname === '/network/connections') {
+			navigate('/network/connections/received');
+		}
+	}, [navigate, location]);
+
 	return (
 		<div className={styles.networkMain}>
 			<div className={styles.navbarContainer}>
