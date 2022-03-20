@@ -18,7 +18,7 @@
 }
 
 .searchModal::-webkit-scrollbar {
-	width: 0px;
+	width: 10px;
 }
 
 .searchBar {
@@ -46,6 +46,12 @@
 	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
 	border-radius: 4px;
 	padding: 10px;
+	cursor: pointer;
+}
+
+.scrollModal {
+	height: 100%;
+	overflow-y: auto;
 }
 
 .searchJobs,
